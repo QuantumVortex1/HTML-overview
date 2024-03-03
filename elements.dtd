@@ -1,0 +1,3 @@
+<!ELEMENT root (element)>
+<!ELEMENT element (title)>
+<!ELEMENT title (#PCDATA)>
