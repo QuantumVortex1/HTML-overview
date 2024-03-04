@@ -33,6 +33,7 @@ main{
     height: 100%;
     min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
     
 }
 ::-webkit-scrollbar{
@@ -220,7 +221,8 @@ main{
 .code-box code {
   font-size:0.9em;
   font-family: local_consola, monospace;
-  color: rgb(84 178 255); /* alternate: white , wheat*/
+  /* alternate: rgb(84 178 255), wheat */
+  color: white;
 }
 
 @media only screen and (min-width: 630px) {
@@ -240,6 +242,6 @@ main{
 }
 @media only screen and (min-width: 1820px) {
     .card{
-        width: 19%;
+        width: calc(20% - 2rem);
     }
 }

@@ -12,7 +12,7 @@
 
 <body>
     <main>
-        <?php load_all("elements.xml") ?>
+        <?php load_all("elements.xml"); ?>
     </main>
     
     <?php
