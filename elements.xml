@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+
     <element>
         <title>Input: Text</title>
         <desc>Das input-Element mit dem Typ text wird verwendet, um ein einfaches Texteingabefeld in Webformularen zu erstellen. Benutzer können hier Text eingeben, wie z. B. ihren Namen, eine Nachricht oder andere kurze Informationen.</desc>
@@ -16,11 +17,14 @@
             </attribute>
         </attributes>
     </element>
+
     <element>
         <title>Button</title>
-        <desc>Das button-Element wird verwendet, um einen anklickbaren Button auf einer Webseite zu erstellen, der Benutzerinteraktionen auslöst, wie beispielsweise das Absenden eines Formulars oder das Ausführen einer JavaScript-Funktion.</desc>
+        <desc>Das button-Element wird verwendet, um einen anklickbaren Button auf einer Webseite zu erstellen, der Benutzerinteraktionen auslöst, wie beispielsweise das Absenden eines Formulars oder das Ausführen einer JavaScript-Funktion.</desc> 
+        
+        
         <code>
-            &lt;button&gt;Hier steht Text&lt;\/button&gt;
+            &lt;button&gt;Hier benennen Sie Ihren Button&lt;\/button&gt;
         </code>
         <thumbnail>
             <![CDATA[ 
