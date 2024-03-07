@@ -191,6 +191,7 @@ footer a{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .card:hover {
   background-color: hsl(0, 0%, 15%);

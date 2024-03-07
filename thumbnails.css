@@ -1,0 +1,8 @@
+.example-label-h{
+    display: flex;
+    flex-direction: row;
+}
+.example-label-v{
+    display: flex;
+    flex-direction: column;
+}

@@ -6,8 +6,8 @@
         <desc>Das input-Element mit dem Typ text wird verwendet, um ein einfaches Texteingabefeld in Webformularen zu erstellen. Benutzer können hier Text eingeben, wie z. B. ihren Namen, eine Nachricht oder andere kurze Informationen.</desc>
         <code>&lt;input type="text"&gt;</code>
         <thumbnail>
-            <![CDATA[ 
-            <input type="text" placeholder="placeholder" id="example-text-input">
+            <![CDATA[
+            <input type="text" placeholder="search" id="example-text-input">
             ]]>
         </thumbnail>
         <attributes>
@@ -24,7 +24,23 @@
         <code>&lt;input type="checkbox" name="name" value="yes"&gt;</code>
         <thumbnail>
             <![CDATA[ 
-            <input type="checkbox" name="agree_terms" value="yes">
+            <strong>Wähle min. eine Option:</strong>
+            <label for="example-checkbox-1" class="example-label-h">
+                <input type="checkbox" name="example-check" value="1" id="example-checkbox-1">
+                <p>Option 1</p>
+            </label>
+            <label for="example-checkbox-2" class="example-label-h">
+                <input type="checkbox" name="example-check" value="2" id="example-checkbox-2" checked>
+                <p>Option 2</p>
+            </label>
+            <label for="example-checkbox-3" class="example-label-h">
+                <input type="checkbox" name="example-check" value="3" id="example-checkbox-3">
+                <p>Option 3</p>
+            </label>
+            <label for="example-checkbox-4" class="example-label-h">
+                <input type="checkbox" name="example-check" value="4" id="example-checkbox-4" checked>
+                <p>Option 4</p>
+            </label>
             ]]>
         </thumbnail>
         <attributes>
@@ -41,7 +57,10 @@
     <code>&lt;input type="password"&gt;</code>
     <thumbnail>
         <![CDATA[ 
-        <input type="password" placeholder="Passwort eingeben" id="password-input">
+            <label for="example-password-input" class="example-label-v">
+                <strong>Gib ein Passwort ein:</strong>
+                <input type="password" placeholder="Passwort" id="example-password-input">
+            </label>
         ]]>
     </thumbnail>
     <attributes>
@@ -58,12 +77,23 @@
     <code>&lt;input type="radio"&gt;</code>
     <thumbnail>
         <![CDATA[ 
-        <input type="radio" name="gender" value="male" id="male-radio">
-        <label for="male-radio">Male</label><br>
-        <input type="radio" name="gender" value="female" id="female-radio">
-        <label for="female-radio">Female</label><br>
-        <input type="radio" name="gender" value="other" id="other-radio">
-        <label for="other-radio">Other</label>
+        <strong>Wähle genau eine Option:</strong>
+            <label for="example-radio-1" class="example-label-h">
+                <input type="radio" name="example-check" value="1" id="example-radio-1" checked>
+                <p>Option 1</p>
+            </label>
+            <label for="example-radio-2" class="example-label-h">
+                <input type="radio" name="example-check" value="2" id="example-radio-2">
+                <p>Option 2</p>
+            </label>
+            <label for="example-radio-3" class="example-label-h">
+                <input type="radio" name="example-check" value="3" id="example-radio-3">
+                <p>Option 3</p>
+            </label>
+            <label for="example-radio-4" class="example-label-h">
+                <input type="radio" name="example-check" value="4" id="example-radio-4">
+                <p>Option 4</p>
+            </label>
         ]]>
     </thumbnail>
     <attributes>
