@@ -20,14 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // SMTP-Server
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'gruppehtml@gmail.com'; // SMTP-Benutzername
-        $mail->Password   = 'bgxm ymai uiod hitm'; // SMTP-Passwort
+        $mail->Username   = 'htmlgruppe@gmail.com'; // SMTP-Benutzername
+        $mail->Password   = 'jibk gyvr eusk bcuo'; // SMTP-Passwort
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587; // Port des SMTP-Servers
 
         // Empfänger
         $mail->setFrom('from@example.com', $name);
-        $mail->addAddress('gruppehtml@gmail.com','HTMLgruppe');
+        $mail->addAddress('htmlgruppe@gmail.com','HTMLgruppe');
 
         // Inhalt der E-Mail
         $mail->isHTML(false);

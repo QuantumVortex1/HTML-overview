@@ -4,9 +4,9 @@ AppPw: -
 
 oder 
 
-Email: htlgruppe@gmail.com
+Email: htmlgruppe@gmail.com
 PW:    Passwort1!
-AppPw: -
+AppPw: jibk gyvr eusk bcuo
 
 
 Man muss 2 Faktor authentifikation aktivierne und neues app passwort erstellen !!! Geht grade nicht probier das später nochmal!
