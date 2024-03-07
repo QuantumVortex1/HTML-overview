@@ -19,23 +19,6 @@
     </element>
 
     <element>
-        <title>Input: Email</title>
-        <desc>Das input-Element mit dem Typ email wird verwendet, um ein Eingabefeld für E-Mail-Adressen in Webformularen zu erstellen. Es validiert automatisch die Eingabe, um sicherzustellen, dass der Benutzer eine gültige E-Mail-Adresse eingibt.</desc>
-        <code>&lt;input type="email"&gt;</code>
-        <thumbnail>
-            <![CDATA[ 
-            <input type="email" placeholder="email adress" id="example-email-input">
-            ]]>
-        </thumbnail>
-        <attributes>
-            <attribute>
-                <title>placeholder</title>
-                <desc>Setzt einen Placeholder, d.h. einen Text der angezeigt wird, wenn das Feld leer ist.</desc>
-            </attribute>
-        </attributes>
-    </element>
-
-    <element>
         <title>Input: Checkbox</title>
         <desc>Das input-Element mit dem Typ checkbox wird verwendet, um eine einzelne Checkbox in Webformularen zu erstellen. Benutzer können diese Checkbox aktivieren oder deaktivieren, um eine Auswahl zu treffen oder eine Bedingung zu bestätigen.</desc>
         <code>&lt;input type="checkbox" name="name" value="yes"&gt;</code>
@@ -48,27 +31,6 @@
             <attribute>
                 <title>value</title>
                 <desc> Legt den Wert fest, der an den Server übermittelt wird, wenn die Checkbox aktiviert ist.</desc>
-            </attribute>
-        </attributes>
-    </element>
-
-    <element>
-        <title>Button</title>
-        <desc>Das button-Element wird verwendet, um einen anklickbaren Button auf einer Webseite zu erstellen, der Benutzerinteraktionen auslöst, wie beispielsweise das Absenden eines Formulars oder das Ausführen einer JavaScript-Funktion.</desc> 
-        
-        
-        <code>
-            &lt;button&gt;Hier benennen Sie Ihren Button&lt;\/button&gt;
-        </code>
-        <thumbnail>
-            <![CDATA[ 
-            <button>Klick mich</button>
-            ]]>
-        </thumbnail>
-        <attributes>
-            <attribute>
-                <title>type</title>
-                <desc>Hier können verschiedene Typen wie "submit" oder "reset" mitgegeben werden.</desc>
             </attribute>
         </attributes>
     </element>
@@ -192,8 +154,8 @@
 </element>
 
 <element>
-    <title>Input: EMail</title>
-    <desc>Das input-Element mit dem Typ EMail wird verwendet, um ein Eingabefeld für Emailangaben in Webformularen zu erstellen. Benutzer können hier ihre Email eingeben,in dem Feld müss ein @ enthalten sein.</desc>
+    <title>Input: E-Mail</title>
+    <desc>Das input-Element mit dem Typ email wird verwendet, um ein Eingabefeld für E-Mail-Adressen in Webformularen zu erstellen. Es validiert automatisch die Eingabe, um sicherzustellen, dass der Benutzer eine gültige E-Mail-Adresse eingibt.</desc>
     <code>&lt;input type="email"&gt;</code>
     <thumbnail>
         <![CDATA[ 
@@ -232,6 +194,27 @@
         </attribute>
     </attributes>
 </element>
+
+    <element>
+        <title>Button</title>
+        <desc>Das button-Element wird verwendet, um einen anklickbaren Button auf einer Webseite zu erstellen, der Benutzerinteraktionen auslöst, wie beispielsweise das Absenden eines Formulars oder das Ausführen einer JavaScript-Funktion.</desc> 
+        
+        
+        <code>
+            &lt;button&gt;Hier benennen Sie Ihren Button&lt;\/button&gt;
+        </code>
+        <thumbnail>
+            <![CDATA[ 
+            <button>Klick mich</button>
+            ]]>
+        </thumbnail>
+        <attributes>
+            <attribute>
+                <title>type</title>
+                <desc>Hier können verschiedene Typen wie "submit" oder "reset" mitgegeben werden.</desc>
+            </attribute>
+        </attributes>
+    </element>
 
 
 </root>

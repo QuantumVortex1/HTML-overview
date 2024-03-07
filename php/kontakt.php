@@ -35,7 +35,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body    = "Name: $name\nE-Mail: $email\nNachricht:\n$message";
 
         $mail->send();
-        echo "Vielen Dank für Ihre Nachricht, $name! Wir werden uns bald bei Ihnen melden.";
+        echo "Vielen Dank für Ihre Nachricht, $name! Wir werden uns bald bei Ihnen melden.<br><br>"; 
+        
+        echo "<strong>Ihre Name lautet:</strong> $name <br> <strong>Ihre E-Mail lautet:</strong> $email<br> <strong>Ihre Nachricht lautet:</strong> <br> $message";
     } catch (Exception $e) {
         echo "Es ist ein Fehler aufgetreten: {$mail->ErrorInfo}";
     }
