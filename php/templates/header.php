@@ -1,10 +1,10 @@
-<a href="index.php" title="home">
-    <img src="assets/images/logo.png" alt="Logo">
+<a href="/HTML-overview/index.php" title="home">
+    <img src="/HTML-overview/assets/images/logo.png" alt="Logo">
     <h1>HTML Übersicht</h1>
 </a>
 <div id="forms-and-links-div">
     <a href="https://github.com/QuantumVortex1/HTML-overview" target="_blank" class="a-nonsense">
-        <img src="assets/images/github-mark-white.svg" alt="Github">
+        <img src="/HTML-overview/assets/images/github-mark-white.svg" alt="Github">
     </a>
     <a href="#" class="a-nonsense" onclick="openLoginOverlay()">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20">

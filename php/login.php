@@ -9,17 +9,25 @@
     <script src="../script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="hide-login">
     <?php include '../php/templates/header.php'; ?>
     </header>
-<?php 
-$loginusername = $_POST['loginusername'];
-$loginemail = $_POST['loginemail'];
-$password = $_POST['password'];
-echo "Vielen Dank fürs Anmelden, $loginusername! <br>Hier sind ihre Anmeldedaten: <br><br>"; 
-        
-echo "<strong>Ihr Name lautet:</strong> $loginusername <br> <strong>Ihre E-Mail lautet:</strong> $loginemail<br> <strong> Ihr sehr starkes Passwort lautet:</strong> $password";
-?>
-    
+    <main name="form-filler">
+        <?php 
+        $loginusername = $_POST['loginusername'];
+        $loginemail = $_POST['loginemail'];
+        $password = $_POST['password'];
+        echo <<<STR
+        <h2>Herzlich willkommen, $loginusername!</h2> 
+        <p>Bitte überprüfen Sie ihre Anmeldedaten:</p>
+        <p><strong>Ihr Name lautet:</strong> $loginusername</p>
+        <p><strong>Ihre E-Mail lautet:</strong> $loginemail</p>
+        <p><strong> Ihr sehr starkes Passwort lautet:</strong> $password</p>
+        <form action="/HTML-overview/index.php"><input class="form-submit" type="submit" value="Passt alles, zurück zur Hauptseite" /></form>
+        STR ?>
+    </main>
+    <footer class="hide-contact">
+        <?php include '../php/templates/footer.php'; ?>
+    </footer>
 </body>
 </html>

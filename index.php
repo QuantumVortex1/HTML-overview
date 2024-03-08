@@ -15,67 +15,14 @@
     <header>
         <?php include 'php\templates\header.php'; ?>
     </header>
-    <main>
+    <main name="index-main">
 
-        <div id="contactOverlay" class="overlay">
-            <div class="form-container">
-                <span class="close-btn" onclick="closeContactOverlay()">&times;</span>
-                <h2>Kontaktformular</h2>
-                <form action="php/kontakt.php" method="post">
-                    <div class="form-contact-div">
-                        <div class="input-group">
-                            <label class="form-label" for="contact-input-1">Name<span class="required">*</span></label>
-                            <input required id="contact-input-1" type="text" name="name" autocomplete="off"
-                                class="form-input">
-                        </div>
-                        <div class="input-group">
-                            <label class="form-label" for="contact-input-2">Email<span class="required">*</span></label>
-                            <input required id="contact-input-2" type="email" name="email" autocomplete="off"
-                                class="form-input">
-                        </div>
-                    </div>
-                    <div class="input-group form-message">
-                        <label class="form-label" for="form-message">Nachricht<span class="required">*</span></label>
-                        <textarea class="form-input" name="message" id="form-message" rows="6" required></textarea>
-                    </div>
-                    <button class="form-submit" type="submit">Senden</button>
-                </form>
-            </div>
-        </div>
-
-        <div id="loginOverlay" class="overlay">
-        <div class="form-container-login">
-            <span class="close-btn" onclick="closeLoginOverlay()">&times;</span>
-            <h2>Login</h2>
-            <form action="php/login.php" method="post">
-            <div class="form-login-div">
-                <div class="input-group">
-                    <label class="form-label" for="login-input-1">Benutzername<span class="required">*</span></label>
-                    <input required id="login-input-1" type="text" name="loginusername" autocomplete="off"
-                        class="form-input">
-                </div>
-                <div class="input-group">
-                    <label class="form-label" for="login-input-2">E-Mail<span class="required">*</span></label>
-                    <input required id="login-input-2" type="email" name="loginemail" autocomplete="off"
-                        class="form-input">
-                </div>
-                <div class="input-group">
-                    <label class="form-label" for="login-input-3">Passwort<span class="required">*</span></label>
-                    <input required id="login-input-3" type="password" name="password" autocomplete="off"
-                        class="form-input">
-                </div>
-                </div>
-                <button class="form-submit" type="submit">Einloggen</button>
-            </form>
-        </div>
-    </div>
-
-
+        <?php include 'php/templates/overlay.php'; ?>
         <?php load_all("elements.xml"); ?>
     </main>
 
     <footer>
-        <?php include 'php\templates\footer.php'; ?>
+        <?php include 'php/templates/footer.php'; ?>
     </footer>
 
 
@@ -155,41 +102,7 @@
             STR;
     }
     ?>
-    <script>
-        function create_code_part(index, text) {
-            let parent = document.getElementById("c-c" + String(index));
-            while (parent.firstChild) parent.removeChild(parent.firstChild);
-            code_div = document.createElement('div');
-            code_div.className = 'code-box';
-            code_p = document.createElement('code');
-            code_p.appendChild(document.createTextNode(text));
-            code_div.appendChild(code_p);
-            parent.appendChild(code_div);
-        }
-
-        function create_desc_part(index, text) {
-            let parent = document.getElementById("c-c" + String(index));
-            while (parent.firstChild) parent.removeChild(parent.firstChild);
-            p = document.createElement('p');
-            p.appendChild(document.createTextNode(text));
-            parent.appendChild(p);
-        }
-
-        function openContactOverlay() {
-            document.getElementById("contactOverlay").style.display = "flex";
-        }
-
-        function closeContactOverlay() {
-            document.getElementById("contactOverlay").style.display = "none";
-        }
-
-        function openLoginOverlay(){
-            document.getElementById("loginOverlay").style.display = "flex";   
-        }
-        function closeLoginOverlay(){
-            document.getElementById("loginOverlay").style.display = "none";
-        }
-    </script>
+    
 </body>
 
 </html>

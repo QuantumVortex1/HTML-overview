@@ -4,14 +4,16 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nachricht Erfolgreich gesendet!</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" href="favicons\f4.jpg">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="icon" href="../favicons/f4.jpg">
+    <script src="../script.js"></script>
 </head>
 <body>
-<header>
-    <?php include '../php/templates/header.php'; ?>
+    <?php include '../php/templates/overlay.php'; ?>
+    <header class="hide-login">
+        <?php include '../php/templates/header.php'; ?>
     </header>
+    <main name="form-filler">
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -49,9 +51,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body    = "Name: $name\nE-Mail: $email\nNachricht:\n$message";
 
         $mail->send();
-        echo "Vielen Dank für Ihre Nachricht, $name! Wir werden uns bald bei Ihnen melden.<br><br>"; 
-        
-        echo "<strong>Ihr Name lautet:</strong> $name <br> <strong>Ihre E-Mail lautet:</strong> $email<br> <strong>Ihre Nachricht lautet:</strong> <br> $message";
+        echo <<<STR
+            <h2>Vielen Dank für Ihre Nachricht, $name! Wir werden uns bald bei Ihnen melden.</h2>
+            <p><strong>Gesendete Email:</strong></p>
+            <p><strong>Von </strong> $name ($email)</p>
+            <p>$message</p>
+            <form action="/HTML-overview/index.php"><input class="form-submit" type="submit" value="Zurück zur Hauptseite" /></form>
+            STR;
     } catch (Exception $e) {
         echo "Es ist ein Fehler aufgetreten: {$mail->ErrorInfo}";
     }
@@ -60,6 +66,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
 }
 ?>
-    
+</main>
+<footer class="hide-contact">
+        <?php include '../php/templates/footer.php'; ?>
+    </footer>
 </body>
 </html>

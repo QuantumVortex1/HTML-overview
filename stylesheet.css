@@ -26,8 +26,8 @@ body{
         linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
     background-size: 55px 55px;
 }
-main{
-    
+
+main[name="index-main"]{
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -35,8 +35,33 @@ main{
     width: 100%;
     position: relative;
     overflow-x: hidden;
-    
 }
+
+main[name="form-filler"] {
+  margin: 1rem;
+  background: rgb(26, 26, 26);
+  
+  font-size: 12px;
+  line-height: 1.4;
+  
+  border-radius: 1em;
+  padding-bottom: 0.5em;
+  z-index: 20;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  
+  border: 1px solid rgb(60 60 60);
+  padding: 1rem;
+}
+
+main[name="form-filler"] > p{
+  font-size: larger;
+  margin: .5em;
+}
+
 footer,
 header{
   margin: 1rem;
@@ -59,6 +84,11 @@ header{
   position: sticky;
   top: 0;
   justify-content: space-between;
+}
+
+header + table{
+  color: white;
+  margin: 1rem;
 }
 
 header a{
@@ -112,12 +142,21 @@ footer p{
   text-align: center;
 }
 
+footer p:first-child:first-line{
+  font-weight: bold;
+}
+
 footer a{
-  color: blue;
+  color: #1a73e8;
 }
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+.card button::before,
+.card button::after{
+  padding: 1em;
 }
 
 .card {
@@ -303,7 +342,7 @@ footer a{
   padding:10px;
 }
 .code-box code {
-  font-size:0.9em;
+  font-size:10px;
   font-family: local_consola, monospace;
   /* alternate: rgb(84 178 255), wheat */
   color: white;
@@ -343,6 +382,9 @@ footer a{
 .close-btn {
   float: right;
   cursor: pointer;
+  backdrop-filter: blur(20px);
+  text-align: center;
+  text-justify: center;
 }
 
 .form-contact-div{
@@ -369,6 +411,16 @@ footer a{
   display: block;
   margin-bottom: 5px;
   margin-left: 1rem;
+ }
+
+ .form-label::after{
+  content: "*";
+  color: red;
+  padding-left: 3px;
+ }
+
+ .form-label::before{
+  content:'\270E';
  }
  
  .form-input:focus, form-input:valid {
@@ -407,11 +459,16 @@ footer a{
   background-color: #fff;
   border-color: #fff;
 }
-.required {
-  color: red;
-  margin-left: 3px;
-}
 
+.hide-login #forms-and-links-div a:last-child {
+  display: none;
+}
+.hide-contact a{
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: white;
+}
 
 
 @media only screen and (min-width: 630px) {
@@ -421,7 +478,7 @@ footer a{
 }
 @media only screen and (min-width: 1060px) {
     .card{
-        width: calc(33% - 2rem);
+        width: calc(33.3% - 2rem);
     }
 }
 @media only screen and (min-width: 1490px) {
