@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachricht Erfolgreich gesendet!</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="favicons\f4.jpg">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <?php include '../php/templates/header.php'; ?>
+    </header>
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -46,3 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
 }
 ?>
+    
+</body>
+</html>

@@ -12,10 +12,6 @@
     <header>
     <?php include '../php/templates/header.php'; ?>
     </header>
-    
-</body>
-</html>
-
 <?php 
 $loginusername = $_POST['loginusername'];
 $loginemail = $_POST['loginemail'];
@@ -24,3 +20,6 @@ echo "Vielen Dank fürs Anmelden, $loginusername! <br>Hier sind ihre Anmeldedate
         
 echo "<strong>Ihr Name lautet:</strong> $loginusername <br> <strong>Ihre E-Mail lautet:</strong> $loginemail<br> <strong> Ihr sehr starkes Passwort lautet:</strong> $password";
 ?>
+    
+</body>
+</html>
