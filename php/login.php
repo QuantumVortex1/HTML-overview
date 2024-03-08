@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="hide-login">
-    <?php include '../php/templates/header.php'; ?>
+    <?php include __DIR__.'/templates/header.php'; ?>
     </header>
     <main name="form-filler">
         <?php 
@@ -27,7 +27,7 @@
         STR ?>
     </main>
     <footer class="hide-contact">
-        <?php include '../php/templates/footer.php'; ?>
+        <?php include __DIR__.'/templates/footer.php'; ?>
     </footer>
 </body>
 </html>

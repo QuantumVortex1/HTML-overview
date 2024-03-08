@@ -13,16 +13,16 @@
 
 <body>
     <header>
-        <?php include 'php\templates\header.php'; ?>
+        <?php include __DIR__.'/php/templates/header.php'; ?>
     </header>
     <main name="index-main">
 
-        <?php include 'php/templates/overlay.php'; ?>
+        <?php include __DIR__.'/php/templates/overlay.php'; ?>
         <?php load_all("elements.xml"); ?>
     </main>
 
     <footer>
-        <?php include 'php/templates/footer.php'; ?>
+        <?php include __DIR__.'/php/templates/footer.php'; ?>
     </footer>
 
 

@@ -9,9 +9,9 @@
     <script src="../script.js"></script>
 </head>
 <body>
-    <?php include '../php/templates/overlay.php'; ?>
+    <?php include __DIR__.'/templates/overlay.php'; ?>
     <header class="hide-login">
-        <?php include '../php/templates/header.php'; ?>
+        <?php include __DIR__.'/templates/header.php'; ?>
     </header>
     <main name="form-filler">
 <?php
@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 </main>
 <footer class="hide-contact">
-        <?php include '../php/templates/footer.php'; ?>
+        <?php include __DIR__.'/templates/footer.php'; ?>
     </footer>
 </body>
 </html>
