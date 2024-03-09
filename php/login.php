@@ -23,7 +23,7 @@
         <p><strong>Ihr Name lautet:</strong> $loginusername</p>
         <p><strong>Ihre E-Mail lautet:</strong> $loginemail</p>
         <p><strong> Ihr sehr starkes Passwort lautet:</strong> $password</p>
-        <form action="/HTML-overview/index.php"><input class="form-submit" type="submit" value="Passt alles, zurück zur Hauptseite" /></form>
+        <form action="../index.php"><input class="form-submit" type="submit" value="Passt alles, zurück zur Hauptseite" /></form>
         STR ?>
     </main>
     <footer class="hide-contact">
