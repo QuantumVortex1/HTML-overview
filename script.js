@@ -31,3 +31,14 @@ function openLoginOverlay() {
 function closeLoginOverlay() {
     document.getElementById("loginOverlay").style.display = "none";
 }
+
+function update_cards(search_val) {
+    var main = document.getElementById("index-main");
+    main.childNodes.forEach(node => {
+        if (node.className == "card"){
+            console.log(node.childNodes[5].childNodes[1]);
+            if (node.childNodes[5].childNodes[1].innerText.includes(search_val)) node.style.display="flex";
+            else node.style.display="none";
+        }
+    });
+}

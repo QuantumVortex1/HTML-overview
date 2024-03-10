@@ -461,7 +461,8 @@ footer a{
 }
 
 
-.hide-login #forms-and-links-div a:last-child {
+.hide-login #forms-and-links-div a:last-child,
+.hide-login #forms-and-links-div #search-input {
   display: none;
 }
 .hide-contact a{

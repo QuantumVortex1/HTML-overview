@@ -45,17 +45,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Subject = 'Kontaktformular Nachricht';
         $mail->Body    = "Name: $name\nE-Mail: $email\nNachricht:\n$message";
         $mail->send();
-        echo <<<STR
+    } catch (Exception $e) {}
+    echo <<<STR
         <h2>Vielen Dank für Ihre Nachricht, $name! Wir werden uns bald bei Ihnen melden.</h2>
         <p><strong>E-mail gesendet an:</strong> htmlgruppe@gmail.com</p>
         <p><strong>Von: </strong> $name ($email)</p>
         <p><strong>Ihre Nachricht:</strong></p>
         <p>$message</p>
-        <form action="/HTML-overview/index.php"><input class="form-submit" type="submit" value="Zurück zur Hauptseite" /></form>
+        <form action="../index.php"><input class="form-submit" type="submit" value="Zurück zur Hauptseite" /></form>
         STR;
-    } catch (Exception $e) {
-        echo "Es ist ein Fehler aufgetreten: {$mail->ErrorInfo}";
-    }
 } else {
     // Wenn das Formular nicht abgesendet wurde, Weiterleitung oder Fehlermeldung anzeigen
     echo "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";

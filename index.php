@@ -19,7 +19,7 @@
     <main id="index-main" name="index-main">
 
         <?php include __DIR__ . '/php/templates/overlay.php'; ?>
-        <?php load_all(""); ?>
+        <?php load_all(); ?>
     </main>
 
     <footer>
@@ -28,32 +28,13 @@
 
 
     <?php
-    function load_all($filter_str)
+    function load_all()
     {
-        require_once __DIR__ . '/php/loader.php';
-        if ($filter_str == "") {
-            $xml = get_all_elements();
-            $idx = 0;
-            foreach ($xml->element as $element) {
-                create_card($idx, $element->title, $element->desc, $element->thumbnail, $element->code);
-                $idx++;
-            }
-        } else {
-            $resp = get_elements($filter_str);
-            $idx = 0;
-            echo $resp[2];
-            echo "<br>";
-            foreach ($resp[0] as $element) echo $element;
-            foreach ($resp[1] as $element) echo $element;
-            // foreach ($resp[0]->element as $element) {
-            // create_card($idx, $element->title, $element->desc, $element->thumbnail, $element->code);
-            // $idx++;
-            // }
-            // $idx = 0;
-            // foreach ($resp[1]->element as $element) {
-            // create_card($idx, $element->title, $element->desc, $element->thumbnail, $element->code);
-            // $idx++;
-            // }
+        $xml = simplexml_load_file(__DIR__ ."/elements.xml");
+        $idx = 0;
+        foreach ($xml->element as $element) {
+            create_card($idx, $element->title, $element->desc, $element->thumbnail, $element->code);
+            $idx++;
         }
     }
 
@@ -123,22 +104,7 @@
     }
 
     ?>
-<script>
-        function update_cards(search_val) {
-            var main = document.getElementById("index-main");
-            console.log(main);
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "index.php?wert=" + search_val, true);
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    for (var i = 2; i < main.childNodes.length; i++) main.removeChild(main.childNodes[i]);
-                    // main.innerHTML += "< ?php echo load_all($_POST['search-input']); ?>"
-                    main.innerHTML = "<?php echo load_all($_POST['search-input']); ?>"
-                }
-            };
-            xhr.send();
-        }
-    </script>
+
 </body>
 
 </html>
