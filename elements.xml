@@ -195,8 +195,8 @@
     </code>
     <thumbnail>
         <![CDATA[ 
-        <pre>Dies ist   ein    vorformatierter Text mit     abständen und oder    
-        versetzungen.</pre>
+        <pre>Dies ist ein vorformatierter Text mit   Abständen   und oder    
+        Versetzungen.</pre>
         <p>Dies ist ein normaler Absatz.</p>
         ]]>
     </thumbnail>
@@ -315,6 +315,8 @@
     </code>
     <thumbnail>
         <![CDATA[ 
+       
+        Damit kann man Sachen verlinken wie z.B.
         <a href="https://wierbicki.org/" target="_blank">Besuche dem Meister seine Webseite</a>
         ]]>
     </thumbnail>
