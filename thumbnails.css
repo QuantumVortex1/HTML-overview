@@ -6,13 +6,15 @@
     display: flex;
     flex-direction: column;
 }
-#thumbnail-header nav{
+.thumb-row-bordered{
     display: flex;
     border: 1px solid grey;
     margin: 1em;
     border-radius: 1em;
 }
-#thumbnail-header nav a{
-    height: 1em;
+.thumb-row-bordered a{
+    margin: .5rem;
     color: white;
+    text-decoration: none;
+    height: auto;
 }

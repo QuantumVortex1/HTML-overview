@@ -12,7 +12,7 @@
     <![CDATA[
     <header id="thumbnail-header">
         <h1>Titel</h1>
-        <nav>
+        <nav class="thumb-row-bordered">
             <a href="#">Start</a>
             <a href="#">Über uns</a>
             <a href="#">Kontakt</a>
@@ -23,7 +23,54 @@
 </element>
 
 <!-- nav -->
+<element>
+    <title>nav</title>
+    <desc>Das nav-Element wird verwendet, um eine Navigation auf einer Webseite zu definieren. Es enthält typischerweise Links oder andere Navigationsinhalte, um Benutzer durch die Webseite zu führen.</desc>
+    <code>&lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Über uns&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <nav class="thumb-row-bordered">
+        <a href="#">Startseite</a>
+        <a href="#">Über uns</a>
+        <a href="#">Kontakt</a>
+    </nav>
+    
+    ]]>
+    </thumbnail>
+</element>
+
 <!-- footer -->
+<element>
+    <title>footer</title>
+    <desc>Das footer-Element wird verwendet, um einen Fußzeilenbereich am Ende einer Webseite oder eines Abschnitts zu definieren. Es dient dazu, Informationen anzuzeigen, die am Ende einer Webseite relevant sind, wie beispielsweise Urheberrechte, Kontaktinformationen, Links zu rechtlichen Hinweisen oder anderen Seiten. Diese Bereiche tragen dazu bei, die Benutzererfahrung zu verbessern, indem sie zusätzliche nützliche Informationen bereitstellen und die Navigation durch die Webseite erleichtern.</desc>
+    <code>&lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 Mein Unternehmen&lt;/p&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Datenschutzerklärung&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/footer&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <footer>
+        <p>&copy; 2024 Meine Firma</p>
+        <nav class="thumb-row-bordered">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutzerklärung</a>
+        </nav>
+    </footer>
+    ]]>
+    </thumbnail>
+</element>
+
 <!-- main -->
 <!-- article -->
 <!-- section -->
