@@ -1,26 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 
+<!-- header -->
+<element>
+    <title>header</title>
+    <desc>Das header-Element wird verwendet, um eine Kopfzeile oder einen Abschnitt am Anfang eines Abschnitts oder einer Webseite darzustellen. Es enthält typischerweise Überschriften, Logos, Navigationsmenüs oder andere Elemente, die als Einführung oder Identifikation dienen.</desc>
+    <code>&lt;header&gt;
+        &lt;h1&gt;Titel&lt;/h1&gt;
+    &lt;/header&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <header id="thumbnail-header">
+        <h1>Titel</h1>
+        <nav>
+            <a href="#">Start</a>
+            <a href="#">Über uns</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    </header>
+    ]]>
+    </thumbnail>
+</element>
+
+<!-- nav -->
+<!-- footer -->
+<!-- main -->
+<!-- article -->
+<!-- section -->
+<!-- aside -->
+<!-- h2 -->
+<!-- h3 -->
+<!-- figure -->
+<!-- figcaption -->
+<!-- hr -->
+<!-- br -->
+<!-- div -->
+<!-- dl -->
+<!-- dt -->
+<!-- dd -->
+<!-- em -->
+<!-- strong -->
+<!-- span -->
+<!-- abbr -->
+<!-- tr -->
+<!-- th -->
+<!-- td -->
+<!-- caption -->
+
     <element>
         <title>Input: Text</title>
-        <desc>Das input-Element mit dem Typ text wird verwendet, um ein einfaches Texteingabefeld in Webformularen zu erstellen. Benutzer können hier Text eingeben, wie z. B. ihren Namen, eine Nachricht oder andere kurze Informationen.</desc>
+        <desc>Das input-Element mit dem Typ text wird verwendet, um ein einfaches Texteingabefeld in
+            Webformularen zu erstellen. Benutzer können hier Text eingeben, wie z. B. ihren Namen,
+            eine Nachricht oder andere kurze Informationen.</desc>
         <code>&lt;input type="text"&gt;</code>
         <thumbnail>
             <![CDATA[
             <input type="text" placeholder="search" id="example-text-input">
             ]]>
         </thumbnail>
-        <attributes>
-            <attribute>
-                <title>placeholder</title>
-                <desc>Setzt einen Placeholder, d.h. einen Text der angezeigt wird, wenn das Feld leer ist.</desc>
-            </attribute>
-        </attributes>
     </element>
 
     <element>
         <title>Input: Checkbox</title>
-        <desc>Das input-Element mit dem Typ checkbox wird verwendet, um eine einzelne Checkbox in Webformularen zu erstellen. Benutzer können diese Checkbox aktivieren oder deaktivieren, um eine Auswahl zu treffen oder eine Bedingung zu bestätigen.</desc>
+        <desc>Das input-Element mit dem Typ checkbox wird verwendet, um eine einzelne Checkbox in
+            Webformularen zu erstellen. Benutzer können diese Checkbox aktivieren oder deaktivieren,
+            um eine Auswahl zu treffen oder eine Bedingung zu bestätigen.</desc>
         <code>&lt;input type="checkbox" name="name" value="yes"&gt;</code>
         <thumbnail>
             <![CDATA[ 
@@ -43,19 +87,15 @@
             </label>
             ]]>
         </thumbnail>
-        <attributes>
-            <attribute>
-                <title>value</title>
-                <desc> Legt den Wert fest, der an den Server übermittelt wird, wenn die Checkbox aktiviert ist.</desc>
-            </attribute>
-        </attributes>
     </element>
 
     <element>
-    <title>Input: Passwort</title>
-    <desc>Das input-Element mit dem Typ Passwort wird verwendet, um ein Eingabefeld für Passwörter in Webformularen zu erstellen. Benutzer können hier ihr Passwort eingeben, das aus Gründen der Sicherheit maskiert wird.</desc>
-    <code>&lt;input type="password"&gt;</code>
-    <thumbnail>
+        <title>Input: Passwort</title>
+        <desc>Das input-Element mit dem Typ Passwort wird verwendet, um ein Eingabefeld für
+            Passwörter in Webformularen zu erstellen. Benutzer können hier ihr Passwort eingeben,
+            das aus Gründen der Sicherheit maskiert wird.</desc>
+        <code>&lt;input type="password"&gt;</code>
+        <thumbnail>
         <![CDATA[ 
             <label for="example-password-input" class="example-label-v">
                 <strong>Gib ein Passwort ein:</strong>
@@ -63,19 +103,15 @@
             </label>
         ]]>
     </thumbnail>
-    <attributes>
-        <attribute>
-            <title>placeholder</title>
-            <desc>Setzt einen Platzhaltertext, der angezeigt wird, wenn das Feld leer ist und kein Passwort eingegeben wird.</desc>
-        </attribute>
-    </attributes>
-</element>
+    </element>
 
-<element>
-    <title>Input: Radio</title>
-    <desc>Das input-Element mit dem Typ Radio wird verwendet, um eine Liste von Optionen in Webformularen darzustellen, bei der Benutzer nur eine Option auswählen können. Jede Option wird durch einen Kreis gekennzeichnet, aus dem nur eine ausgewählt werden kann.</desc>
-    <code>&lt;input type="radio"&gt;</code>
-    <thumbnail>
+    <element>
+        <title>Input: Radio</title>
+        <desc>Das input-Element mit dem Typ Radio wird verwendet, um eine Liste von Optionen in
+            Webformularen darzustellen, bei der Benutzer nur eine Option auswählen können. Jede
+            Option wird durch einen Kreis gekennzeichnet, aus dem nur eine ausgewählt werden kann.</desc>
+        <code>&lt;input type="radio"&gt;</code>
+        <thumbnail>
         <![CDATA[ 
         <strong>Wähle genau eine Option:</strong>
             <label for="example-radio-1" class="example-label-h">
@@ -96,140 +132,80 @@
             </label>
         ]]>
     </thumbnail>
-    <attributes>
-        <attribute>
-            <title>name</title>
-            <desc>Definiert den Namen der Gruppe von Optionen, zu der das Radio-Element gehört.</desc>
-        </attribute>
-        <attribute>
-            <title>value</title>
-            <desc>Legt den Wert fest, der beim Auswählen dieser Option übermittelt wird.</desc>
-        </attribute>
-        <attribute>
-            <title>id</title>
-            <desc>Definiert eine eindeutige Kennung für das Radio-Element.</desc>
-        </attribute>
-    </attributes>
-</element>
+    </element>
 
-<element>
-    <title>Input: Submit</title>
-    <desc>Das input-Element mit dem Typ Submit wird verwendet, um eine Schaltfläche in Webformularen darzustellen, die verwendet wird, um das Formular abzusenden und die eingegebenen Daten an den Server zu senden.</desc>
-    <code>&lt;input type="submit"&gt;</code>
-    <thumbnail>
+    <element>
+        <title>Input: Submit</title>
+        <desc>Das input-Element mit dem Typ Submit wird verwendet, um eine Schaltfläche in
+            Webformularen darzustellen, die verwendet wird, um das Formular abzusenden und die
+            eingegebenen Daten an den Server zu senden.</desc>
+        <code>&lt;input type="submit"&gt;</code>
+        <thumbnail>
         <![CDATA[ 
         <input type="submit" value="Absenden">
         ]]>
     </thumbnail>
-    <attributes>
-        <attribute>
-            <title>value</title>
-            <desc>Legt den Text fest, der auf der Schaltfläche angezeigt wird.</desc>
-        </attribute>
-    </attributes>
-</element>
+    </element>
 
-<element>
-    <title>Input: Number</title>
-    <desc>Das input-Element mit dem Typ Number wird verwendet, um ein Eingabefeld für numerische Werte in Webformularen darzustellen. Benutzer können hier numerische Werte wie Zahlen eingeben.</desc>
-    <code>&lt;input type="number"&gt;</code>
-    <thumbnail>
+    <element>
+        <title>Input: Number</title>
+        <desc>Das input-Element mit dem Typ Number wird verwendet, um ein Eingabefeld für numerische
+            Werte in Webformularen darzustellen. Benutzer können hier numerische Werte wie Zahlen
+            eingeben.</desc>
+        <code>&lt;input type="number"&gt;</code>
+        <thumbnail>
         <![CDATA[ 
         <input type="number" id="quantity" placeholder="1234567" name="quantity" min="1" max="100" step="1">
         ]]>
     </thumbnail>
-    <attributes>
-        <attribute>
-            <title>min</title>
-            <desc>Legt den minimalen Wert fest, den der Benutzer eingeben kann.</desc>
-        </attribute>
-        <attribute>
-            <title>max</title>
-            <desc>Legt den maximalen Wert fest, den der Benutzer eingeben kann.</desc>
-        </attribute>
-        <attribute>
-            <title>step</title>
-            <desc>Legt die Schrittgröße fest, mit der sich der Wert ändert, wenn der Benutzer die Steuerelemente verwendet.</desc>
-        </attribute>
-        <attribute>
-            <title>id</title>
-            <desc>Definiert eine eindeutige Kennung für das Input-Feld.</desc>
-        </attribute>
-        <attribute>
-            <title>name</title>
-            <desc>Definiert den Namen des Input-Feldes, der beim Senden des Formulars verwendet wird.</desc>
-        </attribute>
-    </attributes>
-</element>
+    </element>
 
-<element>
-    <title>Input: Datum</title>
-    <desc>Das input-Element mit dem Typ Datum wird verwendet, um ein Eingabefeld für Datumsangaben in Webformularen zu erstellen. Benutzer können hier ein Datum auswählen, beispielsweise für Geburtsdaten oder Terminvereinbarungen.</desc>
-    <code>&lt;input type="date"&gt;</code>
-    <thumbnail>
+    <element>
+        <title>Input: Datum</title>
+        <desc>Das input-Element mit dem Typ Datum wird verwendet, um ein Eingabefeld für
+            Datumsangaben in Webformularen zu erstellen. Benutzer können hier ein Datum auswählen,
+            beispielsweise für Geburtsdaten oder Terminvereinbarungen.</desc>
+        <code>&lt;input type="date"&gt;</code>
+        <thumbnail>
         <![CDATA[ 
         <input type="date" id="date-input" min="2000-01-01" max="2024-12-31">
         ]]>
     </thumbnail>
-    <attributes>
-        <attribute>
-            <title>min</title>
-            <desc>Legt das minimale Datum fest, das ausgewählt werden kann.</desc>
-        </attribute>
-        <attribute>
-            <title>max</title>
-            <desc>Legt das maximale Datum fest, das ausgewählt werden kann.</desc>
-        </attribute>
-    </attributes>
-</element>
+    </element>
 
-<element>
-    <title>Input: E-Mail</title>
-    <desc>Das input-Element mit dem Typ email wird verwendet, um ein Eingabefeld für E-Mail-Adressen in Webformularen zu erstellen. Es validiert automatisch die Eingabe, um sicherzustellen, dass der Benutzer eine gültige E-Mail-Adresse eingibt.</desc>
-    <code>&lt;input type="email"&gt;</code>
-    <thumbnail>
+    <element>
+        <title>Input: E-Mail</title>
+        <desc>Das input-Element mit dem Typ email wird verwendet, um ein Eingabefeld für
+            E-Mail-Adressen in Webformularen zu erstellen. Es validiert automatisch die Eingabe, um
+            sicherzustellen, dass der Benutzer eine gültige E-Mail-Adresse eingibt.</desc>
+        <code>&lt;input type="email"&gt;</code>
+        <thumbnail>
         <![CDATA[ 
         <input required type="email" placeholder="abc@googlemail.de" id="email-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
         ]]>
     </thumbnail>
-    <attributes>
-        <attribute>
-            <title>required</title>
-            <desc>Legt fest, das das Feld Email benötigt wird.</desc>
-        </attribute>
-        <attribute>
-            <title>pattern</title>
-            <desc>Legt das Muster das eingehalten werden muss fest, welche Zeichen wo benutzt werden müssen.</desc>
-        </attribute>
-    </attributes>
-</element>
+    </element>
 
-<element>
-    <title>Input: Datei</title>
-    <desc>Das input-Element mit dem Typ Datei wird verwendet, um Benutzern das Hochladen von Dateien in Webformularen zu ermöglichen. Benutzer können hier eine Datei von ihrem lokalen Gerät auswählen, um sie hochzuladen.</desc>
-    <code>&lt;input type="file"&gt;</code>
-    <thumbnail>
+    <element>
+        <title>Input: Datei</title>
+        <desc>Das input-Element mit dem Typ Datei wird verwendet, um Benutzern das Hochladen von
+            Dateien in Webformularen zu ermöglichen. Benutzer können hier eine Datei von ihrem
+            lokalen Gerät auswählen, um sie hochzuladen.</desc>
+        <code>&lt;input type="file"&gt;</code>
+        <thumbnail>
         <![CDATA[ 
         <input type="file" id="file-input">
         ]]>
     </thumbnail>
-    <attributes>
-        <attribute>
-            <title>accept</title>
-            <desc>Legt die Dateitypen fest, die akzeptiert werden sollen, z. B. "image/png, .jpg, .pdf".</desc>
-        </attribute>
-        <attribute>
-            <title>multiple</title>
-            <desc>Wenn vorhanden, können Benutzer mehrere Dateien gleichzeitig auswählen.</desc>
-        </attribute>
-    </attributes>
-</element>
+    </element>
 
     <element>
         <title>Button</title>
-        <desc>Das button-Element wird verwendet, um einen anklickbaren Button auf einer Webseite zu erstellen, der Benutzerinteraktionen auslöst, wie beispielsweise das Absenden eines Formulars oder das Ausführen einer JavaScript-Funktion.</desc> 
-        
-        
+        <desc>Das button-Element wird verwendet, um einen anklickbaren Button auf einer Webseite zu
+            erstellen, der Benutzerinteraktionen auslöst, wie beispielsweise das Absenden eines
+            Formulars oder das Ausführen einer JavaScript-Funktion.</desc>
+
+
         <code>
             &lt;button&gt;Hier benennen Sie Ihren Button&lt;\/button&gt;
         </code>
@@ -238,12 +214,6 @@
             <button>Klick mich</button>
             ]]>
         </thumbnail>
-        <attributes>
-            <attribute>
-                <title>type</title>
-                <desc>Hier können verschiedene Typen wie "submit" oder "reset" mitgegeben werden.</desc>
-            </attribute>
-        </attributes>
     </element>
 
 
