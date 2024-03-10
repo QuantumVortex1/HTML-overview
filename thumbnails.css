@@ -58,9 +58,39 @@
     box-shadow: 0 0 20px rgb(70,70,70);
 }
 
-.thumb-section{
-    padding: 1em;
-    margin: .5em;
+.thumb-box{
+    width: 80%;
+    height: 80%;
+    padding: 1rem;
+}
+.thumb-small-box{
     width: 80%;
     height: 40%;
+    margin: .5em;
+    padding: 1rem;
+}
+
+.thumb-article{
+    width: 80%;
+    height: 80%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.thumb-article h2{
+    margin: 0;
+}
+.thumb-article footer{
+    width: 100%;
+    margin: 0;
+}
+.thumb-article footer p{
+    margin: 0;
+}
+
+.thumb-p-pre p,
+.thumb-p-pre pre,
+.thumb-p-pre h3{
+    margin: 0;
 }
