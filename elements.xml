@@ -1,6 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <element>
+    <title>Header</title>
+    <desc>Das header-Element wird verwendet, um eine Kopfzeile oder einen Abschnitt am Anfang eines Abschnitts oder einer Webseite darzustellen. Es enthält typischerweise Überschriften, Logos, Navigationsmenüs oder andere Elemente, die als Einführung oder Identifikation dienen.</desc>
+    <code>&lt;header&gt;
+        &lt;h1&gt;Titel&lt;/h1&gt;
+    &lt;/header&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <header id="thumbnail-header">
+        <h1>Titel</h1>
+        <nav class="thumb-row-bordered">
+            <a href="#">Start</a>
+            <a href="#">Über uns</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    </header>
+    ]]>
+    </thumbnail>
+</element>
+
+<element>
+    <title>Nav</title>
+    <desc>Das nav-Element wird verwendet, um eine Navigation auf einer Webseite zu definieren. Es enthält typischerweise Links oder andere Navigationsinhalte, um Benutzer durch die Webseite zu führen.</desc>
+    <code>&lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Über uns&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <nav class="thumb-row-bordered">
+        <a href="#">Startseite</a>
+        <a href="#">Über uns</a>
+        <a href="#">Kontakt</a>
+    </nav>
+    
+    ]]>
+    </thumbnail>
+</element>
+
+<element>
+    <title>Footer</title>
+    <desc>Das footer-Element wird verwendet, um einen Fußzeilenbereich am Ende einer Webseite oder eines Abschnitts zu definieren. Es dient dazu, Informationen anzuzeigen, die am Ende einer Webseite relevant sind, wie beispielsweise Urheberrechte, Kontaktinformationen, Links zu rechtlichen Hinweisen oder anderen Seiten. Diese Bereiche tragen dazu bei, die Benutzererfahrung zu verbessern, indem sie zusätzliche nützliche Informationen bereitstellen und die Navigation durch die Webseite erleichtern.</desc>
+    <code>&lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 Mein Unternehmen&lt;/p&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Datenschutzerklärung&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/footer&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <footer>
+        <p>&copy; 2024 Meine Firma</p>
+        <nav class="thumb-row-bordered">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutzerklärung</a>
+        </nav>
+    </footer>
+    ]]>
+    </thumbnail>
+</element>
+
+<element>
+    <title>Article</title>
+    <desc> Das article-Element wird verwendet, um einen eigenständigen Inhalt oder Artikel auf einer Webseite zu definieren. Es enthält typischerweise Informationen wie News-Artikel, Blog-Beiträge, Forenbeiträge oder andere Inhalte, die unabhängig voneinander dargestellt werden können. Das article-Element trägt zur semantischen Strukturierung einer Webseite bei, indem es wichtige Inhalte hervorhebt und ihnen eine klare Bedeutung gibt.</desc>
+    <code>&lt;article&gt;
+        &lt;h2&gt;Neuer Blog-Beitrag&lt;/h2&gt;
+        &lt;p&gt;Inhalt des Blog-Beitrags...&lt;/p&gt;
+        &lt;footer&gt;
+            &lt;p&gt;Veröffentlicht am 1. März 2024 von John Doe&lt;/p&gt;
+        &lt;/footer&gt;
+    &lt;/article&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <article>
+        <h2>Neuer Blog-Beitrag</h2>
+        <p>Inhalt des Blog-Beitrags...</p>
+        <footer>
+            <p>Veröffentlicht am 1. März 2024 von John Doe</p>
+        </footer>
+    </article>
+    ]]>
+    </thumbnail>
+</element>
+
+<element>
+    <title>Section</title>
+    <desc>Das section-Element wird verwendet, um thematische Abschnitte oder Unterabschnitte in einer Webseite zu definieren. Es ermöglicht die logische Gruppierung von Inhalten, die einen gemeinsamen Kontext teilen. Ein section-Element kann innerhalb eines Hauptbereichs (wie main) oder anderer Abschnitte platziert werden, um die Struktur und Organisation einer Webseite zu verbessern.</desc>
+    <code>&lt;section&gt;
+        &lt;h2&gt;Über uns&lt;/h2&gt;
+        &lt;p&gt;Informationen über unser Unternehmen...&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+    &lt;h2&gt;Links und Infos&lt;/h2&gt;
+    &lt;p&gt;Hier sind infos aufgelistet&lt;/p&gt;
+&lt;/section&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <section>
+        <h2>Über uns</h2>
+        <p>Informationen über unser Unternehmen...</p>
+    </section>
+    <section>
+        <h2>Links und Infos</h2>
+        <p>Hier sind infos aufgelistet</p>
+    </section>
+    ]]>
+    </thumbnail>
+</element>
+
+<element>
+    <title>Aside</title>
+    <desc>Das aside-Element wird verwendet, um Inhalte abzusondern, die nicht direkt zum Hauptinhalt gehören, sondern als Nebeninformation dienen.</desc>
+    <code>
+        &lt;section class="main-content"&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Hauptartikel&lt;/h2&gt;
+                &lt;p&gt;Inhalt des Hauptartikels.&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+        
+        &lt;aside class="side-content"&gt;
+            &lt;h3&gt;Nebeninformation&lt;/h3&gt;
+            &lt;p&gt;Zusätzliche Informationen oder Werbung könnten hier platziert werden.&lt;/p&gt;
+        &lt;/aside&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <section class="main-content">
+            <article>
+                <h2>Hauptartikel</h2>
+                <p>Inhalt des Hauptartikels.</p>
+            </article>
+        </section>
+        
+        <aside class="side-content">
+            <h3>Nebeninformation</h3>
+            <p>Zusätzliche Informationen oder Werbung könnten hier platziert werden.</p>
+        </aside>
+        ]]>
+    </thumbnail>
+</element>
+<element>
     <title>Heading Levels</title>
     <desc>Die h1-, h2- und h3-Elemente werden verwendet, um verschiedene Ebenen von Überschriften in HTML darzustellen.</desc>
     <code>
@@ -36,14 +183,14 @@
     <desc>Das figure-Element wird verwendet, um Medieninhalte wie Bilder mit dem figcapture-Element einer zugehörigen Bildunterschrift darzustellen.</desc>
     <code>
         &lt;figure&gt;
-            &lt;img src="assets/images/logo.jpg" alt="Beschreibender Text"&gt;
+            &lt;img src="assets/images/logo.jpg" alt="Beschreibender Text" width="200" height="135"&gt;
             &lt;figcaption&gt;Bildunterschrift&lt;/figcaption&gt;
         &lt;/figure&gt;
     </code>
     <thumbnail>
         <![CDATA[ 
         <figure>
-            <img src="assets/images/logo.jpg" alt="Logo Image">
+            <img src="assets/images/logo.jpg" alt="Logo Image" width="200" height="135">
             <figcaption>Das ist unser Logo</figcaption>
         </figure>
         ]]>
@@ -204,7 +351,7 @@
     </thumbnail>
 </element>
 <element>
-    <title>HTML and CSS Table</title>
+    <title>Table</title>
     <desc> Das table-Element wird verwendet, um eine Tabelle in HTML zu erstellen, die Daten in Zeilen und Spalten organisiert.
         Eine Tabelle besteht aus drei Hauptteilen: dem Kopf (thead), dem Hauptteil (tbody) und dem Fuß (tfoot).</desc>
     <code>
@@ -260,174 +407,8 @@
         ]]>
     </thumbnail>
 </element>
-
-
-
-
-<!-- abbr -->
-<!-- caption -->
-<!--patternol-->
-<!--blockquote-->
-<!--img-->
-<!--svg Iframe -->
-<!--audio video source-->
-<!--form ??sind das schon kontaktdaten?-->
-<!--textarea -->
-<!--select oprion -->
-<!--details summary -->
-<!--Kombinator und attributselektor-->
 <element>
-    <title>Header</title>
-    <desc>Das header-Element wird verwendet, um eine Kopfzeile oder einen Abschnitt am Anfang eines Abschnitts oder einer Webseite darzustellen. Es enthält typischerweise Überschriften, Logos, Navigationsmenüs oder andere Elemente, die als Einführung oder Identifikation dienen.</desc>
-    <code>&lt;header&gt;
-        &lt;h1&gt;Titel&lt;/h1&gt;
-    &lt;/header&gt;</code>
-    <thumbnail>
-    <![CDATA[
-    <header id="thumbnail-header">
-        <h1>Titel</h1>
-        <nav class="thumb-row-bordered">
-            <a href="#">Start</a>
-            <a href="#">Über uns</a>
-            <a href="#">Kontakt</a>
-        </nav>
-    </header>
-    ]]>
-    </thumbnail>
-</element>
-
-<element>
-    <title>Nav</title>
-    <desc>Das nav-Element wird verwendet, um eine Navigation auf einer Webseite zu definieren. Es enthält typischerweise Links oder andere Navigationsinhalte, um Benutzer durch die Webseite zu führen.</desc>
-    <code>&lt;nav&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Über uns&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/nav&gt;</code>
-    <thumbnail>
-    <![CDATA[
-    <nav class="thumb-row-bordered">
-        <a href="#">Startseite</a>
-        <a href="#">Über uns</a>
-        <a href="#">Kontakt</a>
-    </nav>
-    
-    ]]>
-    </thumbnail>
-</element>
-
-<element>
-    <title>Footer</title>
-    <desc>Das footer-Element wird verwendet, um einen Fußzeilenbereich am Ende einer Webseite oder eines Abschnitts zu definieren. Es dient dazu, Informationen anzuzeigen, die am Ende einer Webseite relevant sind, wie beispielsweise Urheberrechte, Kontaktinformationen, Links zu rechtlichen Hinweisen oder anderen Seiten. Diese Bereiche tragen dazu bei, die Benutzererfahrung zu verbessern, indem sie zusätzliche nützliche Informationen bereitstellen und die Navigation durch die Webseite erleichtern.</desc>
-    <code>&lt;footer&gt;
-        &lt;p&gt;&amp;copy; 2024 Mein Unternehmen&lt;/p&gt;
-        &lt;nav&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Datenschutzerklärung&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;
-    &lt;/footer&gt;</code>
-    <thumbnail>
-    <![CDATA[
-    <footer>
-        <p>&copy; 2024 Meine Firma</p>
-        <nav class="thumb-row-bordered">
-            <a href="#">Impressum</a>
-            <a href="#">Datenschutzerklärung</a>
-        </nav>
-    </footer>
-    ]]>
-    </thumbnail>
-</element>
-
-<element>
-    <title>Article</title>
-    <desc> Das article-Element wird verwendet, um einen eigenständigen Inhalt oder Artikel auf einer Webseite zu definieren. Es enthält typischerweise Informationen wie News-Artikel, Blog-Beiträge, Forenbeiträge oder andere Inhalte, die unabhängig voneinander dargestellt werden können. Das article-Element trägt zur semantischen Strukturierung einer Webseite bei, indem es wichtige Inhalte hervorhebt und ihnen eine klare Bedeutung gibt.</desc>
-    <code>&lt;article&gt;
-        &lt;h2&gt;Neuer Blog-Beitrag&lt;/h2&gt;
-        &lt;p&gt;Inhalt des Blog-Beitrags...&lt;/p&gt;
-        &lt;footer&gt;
-            &lt;p&gt;Veröffentlicht am 1. März 2024 von John Doe&lt;/p&gt;
-        &lt;/footer&gt;
-    &lt;/article&gt;</code>
-    <thumbnail>
-    <![CDATA[
-    <article>
-        <h2>Neuer Blog-Beitrag</h2>
-        <p>Inhalt des Blog-Beitrags...</p>
-        <footer>
-            <p>Veröffentlicht am 1. März 2024 von John Doe</p>
-        </footer>
-    </article>
-    ]]>
-    </thumbnail>
-</element>
-
-<element>
-    <title>Section</title>
-    <desc>Das section-Element wird verwendet, um thematische Abschnitte oder Unterabschnitte in einer Webseite zu definieren. Es ermöglicht die logische Gruppierung von Inhalten, die einen gemeinsamen Kontext teilen. Ein section-Element kann innerhalb eines Hauptbereichs (wie main) oder anderer Abschnitte platziert werden, um die Struktur und Organisation einer Webseite zu verbessern.</desc>
-    <code>&lt;section&gt;
-        &lt;h2&gt;Über uns&lt;/h2&gt;
-        &lt;p&gt;Informationen über unser Unternehmen...&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section&gt;
-    &lt;h2&gt;Links und Infos&lt;/h2&gt;
-    &lt;p&gt;Hier sind infos aufgelistet&lt;/p&gt;
-&lt;/section&gt;</code>
-    <thumbnail>
-    <![CDATA[
-    <section>
-        <h2>Über uns</h2>
-        <p>Informationen über unser Unternehmen...</p>
-    </section>
-    <section>
-        <h2>Links und Infos</h2>
-        <p>Hier sind infos aufgelistet</p>
-    </section>
-    ]]>
-    </thumbnail>
-</element>
-
-<element>
-    <title>Aside</title>
-    <desc>Das aside-Element wird verwendet, um Inhalte abzusondern, die nicht direkt zum Hauptinhalt gehören, sondern als Nebeninformation dienen.</desc>
-    <code>
-        &lt;section class="main-content"&gt;
-            &lt;article&gt;
-                &lt;h2&gt;Hauptartikel&lt;/h2&gt;
-                &lt;p&gt;Inhalt des Hauptartikels.&lt;/p&gt;
-            &lt;/article&gt;
-        &lt;/section&gt;
-        
-        &lt;aside class="side-content"&gt;
-            &lt;h3&gt;Nebeninformation&lt;/h3&gt;
-            &lt;p&gt;Zusätzliche Informationen oder Werbung könnten hier platziert werden.&lt;/p&gt;
-        &lt;/aside&gt;
-    </code>
-    <thumbnail>
-        <![CDATA[ 
-        <section class="main-content">
-            <article>
-                <h2>Hauptartikel</h2>
-                <p>Inhalt des Hauptartikels.</p>
-            </article>
-        </section>
-        
-        <aside class="side-content">
-            <h3>Nebeninformation</h3>
-            <p>Zusätzliche Informationen oder Werbung könnten hier platziert werden.</p>
-        </aside>
-        ]]>
-    </thumbnail>
-</element>
-
-
-
-<element>
-    <title>Table</title>
+    <title>Table (th-tr-td)</title>
     <desc>Das table-Element wird verwendet, um eine Tabelle zu erstellen. tr steht für Tabellenzeile, th steht für Tabellenkopf und td steht für Tabellenzelle.</desc>
     <code>
         &lt;table&gt;
@@ -485,6 +466,129 @@
         ]]>
     </thumbnail>
 </element>
+<element>
+    <title>Caption</title>
+    <desc>
+        Das table-Element kann eine optionale Überschrift haben, die durch das caption-Element definiert wird.
+        Die Überschrift befindet sich normalerweise über der Tabelle und gibt dem Benutzer einen kurzen Überblick über den Inhalt der Tabelle.
+        <br/><br/>
+        Beispiel:
+        <code>
+            &lt;table&gt;
+                &lt;caption&gt;Wichtige Tabelle&lt;/caption&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Spalte 1&lt;/th&gt;
+                        &lt;th&gt;Spalte 2&lt;/th&gt;
+                        <!-- Weitere Spaltenköpfe... -->
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Daten 1&lt;/td&gt;
+                        &lt;td&gt;Daten 2&lt;/td&gt;
+                        <!-- Weitere Datenzeilen... -->
+                    &lt;/tr&gt;
+                    <!-- Weitere Datenzeilen... -->
+                &lt;/tbody&gt;
+                &lt;tfoot&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Gesamt 1&lt;/td&gt;
+                        &lt;td&gt;Gesamt 2&lt;/td&gt;
+                        <!-- Weitere Spalten für die Gesamtsumme... -->
+                    &lt;/tr&gt;
+                &lt;/tfoot&gt;
+            &lt;/table&gt;
+        </code>
+    </desc>
+    <thumbnail>
+        <![CDATA[ 
+        <table>
+            <caption>Wichtige Tabelle</caption>
+            <thead>
+                <tr>
+                    <th>Spalte 1</th>
+                    <th>Spalte 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Daten 1</td>
+                    <td>Daten 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Gesamt 1</td>
+                    <td>Gesamt 2</td>
+                </tr>
+            </tfoot>
+        </table>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>IMG</title>
+    <desc>
+        Das img-Element wird verwendet, um Bilder in HTML einzufügen. Es erfordert das "src"-Attribut, das den Pfad zur Bilddatei angibt.
+        Zusätzliche Attribute wie "alt" (alternative Textbeschreibung) und "width"/"height" (Breite/Höhe des Bildes) können optional hinzugefügt werden.  </desc>
+        <br/><br/>
+        Beispiel:
+        <code>
+            &lt;img src="logo.png" alt="Beschreibung des Bildes" width="200" height="135"&gt;
+        </code>
+  
+    <thumbnail>
+        <![CDATA[ 
+        <img src="assets\images\logo.png" alt="Unser Logo" width="200" height="135">
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>SVG</title>
+    <desc>
+        Das svg-Element wird verwendet, um skalierbare Vektorgrafiken in HTML einzufügen. SVG-Grafiken können Formen, Pfade und Texte enthalten.
+        <br/><br/>
+        Beispiel:
+        <code>
+            &lt;svg width="100" height="100"&gt;
+                &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;
+            &lt;/svg&gt;
+        </code>
+    </desc>
+    <thumbnail>
+        <![CDATA[ 
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>iFrame</title>
+    <desc>
+        Das iframe-Element wird verwendet, um eine eingebettete HTML-Seite in eine andere HTML-Seite einzufügen. Es ermöglicht das Anzeigen von Inhalten von externen Quellen.
+        Das "src"-Attribut definiert die URL der eingebetteten Seite. Weitere Attribute wie "width", "height", und "frameborder" können optional hinzugefügt werden. </desc>
+        <br/><br/>
+        Beispiel:
+        <code>
+            &lt;iframe src=""https://www.example.com" width="200" height="150" frameborder="0"&gt;&lt;/iframe&gt;
+        </code>
+   
+    <thumbnail>
+        <![CDATA[ 
+        <iframe src="https://www.example.com" width="380" height="200" frameborder="0"></iframe>
+        ]]>
+    </thumbnail>
+</element>
+
+<!--audio video source-->
+<!--form -->
+<!--textarea -->
+<!--select option -->
+<!--details summary -->
+<!--Kombinator und attributselektor-->
+
 
     <element>
         <title>Input: Text</title>
