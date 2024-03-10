@@ -35,8 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPAuth   = true;
         $mail->Username   = 'htmlgruppe@gmail.com'; // SMTP-Benutzername
         $mail->Password   = 'iubl liax bahi sole'; // SMTP-Passwort
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 587; // Port des SMTP-Servers
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
+        $mail->Port       = 465; // Port des SMTP-Servers
         // Empfänger
         $mail->setFrom('from@example.com', $name);
         $mail->addAddress('htmlgruppe@gmail.com','HTMLgruppe');
