@@ -479,7 +479,7 @@ footer a{
 .hide-login #forms-and-links-div input[type="text"] {
   display: none;
 }
-.hide-contact a{
+.hide-contact .link-imp{
   pointer-events: none;
   cursor: default;
   text-decoration: none;
