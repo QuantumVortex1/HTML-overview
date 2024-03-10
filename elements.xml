@@ -72,8 +72,85 @@
 </element>
 
 <!-- main -->
+<element>
+    <title>main</title>
+    <desc>Das main-Element wird verwendet, um den Hauptinhalt einer Webseite zu definieren. Es umfasst normalerweise den größten Teil des sichtbaren Inhalts einer Webseite, wie Artikel, Abschnitte, Seiteninhalte oder andere wichtige Informationen, die Benutzer sehen sollen. Das main-Element spielt eine zentrale Rolle in der Organisation und Strukturierung von Webseiten, da es den Fokus auf den Hauptinhalt lenkt und anderen Inhalt wie Header, Footer und Nebeninhalte ergänzt.</desc>
+    <code>&lt;main&gt;
+        &lt;div&gt;
+            &lt;h2&gt;Hier ist Inhalt&lt;/h2&gt;
+            &lt;p&gt;BlaBlaBla...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;h2&gt;Hier auch&lt;/h2&gt;
+            &lt;p&gt;Inhalt sdifskjfhds lfhls...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <main>
+        <div>
+            <h2>Hauptbereich 1</h2>
+            <p>Hier steht wichtiges Zeug...</p>
+        </div>
+        <div>
+            <h2>Immernoch Hauptbereich</h2>
+            <p>Hier steht noch mehr wichtiges Zeug...</p>
+        </div>
+    </main>
+    ]]>
+    </thumbnail>
+</element>
+
 <!-- article -->
+<element>
+    <title>article</title>
+    <desc> Das article-Element wird verwendet, um einen eigenständigen Inhalt oder Artikel auf einer Webseite zu definieren. Es enthält typischerweise Informationen wie News-Artikel, Blog-Beiträge, Forenbeiträge oder andere Inhalte, die unabhängig voneinander dargestellt werden können. Das article-Element trägt zur semantischen Strukturierung einer Webseite bei, indem es wichtige Inhalte hervorhebt und ihnen eine klare Bedeutung gibt.</desc>
+    <code>&lt;article&gt;
+        &lt;h2&gt;Neuer Blog-Beitrag&lt;/h2&gt;
+        &lt;p&gt;Inhalt des Blog-Beitrags...&lt;/p&gt;
+        &lt;footer&gt;
+            &lt;p&gt;Veröffentlicht am 1. März 2024 von John Doe&lt;/p&gt;
+        &lt;/footer&gt;
+    &lt;/article&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <article>
+        <h2>Neuer Blog-Beitrag</h2>
+        <p>Inhalt des Blog-Beitrags...</p>
+        <footer>
+            <p>Veröffentlicht am 1. März 2024 von John Doe</p>
+        </footer>
+    </article>
+    ]]>
+    </thumbnail>
+</element>
+
 <!-- section -->
+<element>
+    <title>section</title>
+    <desc>Das section-Element wird verwendet, um thematische Abschnitte oder Unterabschnitte in einer Webseite zu definieren. Es ermöglicht die logische Gruppierung von Inhalten, die einen gemeinsamen Kontext teilen. Ein section-Element kann innerhalb eines Hauptbereichs (wie main) oder anderer Abschnitte platziert werden, um die Struktur und Organisation einer Webseite zu verbessern.</desc>
+    <code>&lt;section&gt;
+        &lt;h2&gt;Über uns&lt;/h2&gt;
+        &lt;p&gt;Informationen über unser Unternehmen...&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+    &lt;h2&gt;Links und Infos&lt;/h2&gt;
+    &lt;p&gt;Hier sind infos aufgelistet&lt;/p&gt;
+&lt;/section&gt;</code>
+    <thumbnail>
+    <![CDATA[
+    <section>
+        <h2>Über uns</h2>
+        <p>Informationen über unser Unternehmen...</p>
+    </section>
+    <section>
+        <h2>Links und Infos</h2>
+        <p>Hier sind infos aufgelistet</p>
+    </section>
+    ]]>
+    </thumbnail>
+</element>
+
 <!-- aside -->
 <!-- h2 -->
 <!-- h3 -->
