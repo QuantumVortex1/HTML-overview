@@ -13,17 +13,17 @@
 
 <body>
     <header>
-        <?php include __DIR__ . '/php/templates/header.php'; ?>
+        <?php include __DIR__ .'/php/templates/header.php'; ?>
 
     </header>
     <main id="index-main">
-
-        <?php include __DIR__ . '/php/templates/overlay.php'; ?>
+        
+        <?php include __DIR__ .'/php/templates/overlay.php'; ?>
         <?php load_all(); ?>
     </main>
 
     <footer>
-        <?php include __DIR__ . '/php/templates/footer.php'; ?>
+        <?php include __DIR__ .'/php/templates/footer.php'; ?>
     </footer>
 
 

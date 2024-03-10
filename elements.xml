@@ -7,16 +7,22 @@
         &lt;h1&gt;Titel&lt;/h1&gt;
     &lt;/header&gt;</code>
     <thumbnail>
-    <![CDATA[
-    <header id="thumbnail-header">
-        <h1>Titel</h1>
-        <nav class="thumb-row-bordered">
-            <a href="#">Start</a>
-            <a href="#">Über uns</a>
-            <a href="#">Kontakt</a>
+        <![CDATA[
+        <div class='thumb-screen-body thumb-t-b-r'>
+        <header class='thumb-screen-header thumb-highlight thumb-t-b-r'>
+        <h2>Titel</h2>
+        <nav class='thumb-row-bordered thumb-t-b-r'>
+        <a href='#'>Start</a>
+        <a href='#'>Infos</a>
+        <a href='#'>Kontakt</a>
         </nav>
-    </header>
-    ]]>
+        </header>
+        <aside class='thumb-screen-aside thumb-t-b-r'>
+        </aside>
+        <div class='thumb-screen-main thumb-t-b-r'></div>
+        <footer class='thumb-screen-footer thumb-t-b-r'><p>Impressum, Datenschutz etc.</p></footer>
+        </div>
+        ]]>
     </thumbnail>
 </element>
 
@@ -32,11 +38,20 @@
     &lt;/nav&gt;</code>
     <thumbnail>
     <![CDATA[
-    <nav class="thumb-row-bordered">
-        <a href="#">Startseite</a>
-        <a href="#">Über uns</a>
-        <a href="#">Kontakt</a>
-    </nav>
+    <div class="thumb-screen-body thumb-t-b-r">
+        <header class="thumb-screen-header thumb-t-b-r">
+            <h2>Titel</h2>
+            <nav class="thumb-row-bordered thumb-highlight thumb-t-b-r">
+                <a href="#">Start</a>
+                <a href="#">Infos</a>
+                <a href="#">Kontakt</a>
+            </nav>
+        </header>
+        <aside class="thumb-screen-aside thumb-t-b-r">
+        </aside>
+        <div class="thumb-screen-main thumb-t-b-r"></div>
+        <footer class="thumb-screen-footer thumb-t-b-r"><p>Impressum, Datenschutz etc.</p></footer>
+    </div>
     
     ]]>
     </thumbnail>
@@ -56,13 +71,20 @@
     &lt;/footer&gt;</code>
     <thumbnail>
     <![CDATA[
-    <footer>
-        <p>&copy; 2024 Meine Firma</p>
-        <nav class="thumb-row-bordered">
-            <a href="#">Impressum</a>
-            <a href="#">Datenschutzerklärung</a>
-        </nav>
-    </footer>
+    <div class="thumb-screen-body thumb-t-b-r">
+        <header class="thumb-screen-header thumb-t-b-r">
+            <h2>Titel</h2>
+            <nav class="thumb-row-bordered thumb-t-b-r">
+                <a href="#">Start</a>
+                <a href="#">Infos</a>
+                <a href="#">Kontakt</a>
+            </nav>
+        </header>
+        <aside class="thumb-screen-aside thumb-t-b-r">
+        </aside>
+        <div class="thumb-screen-main thumb-t-b-r"></div>
+        <footer class="thumb-screen-footer thumb-highlight thumb-t-b-r"><p>Impressum, Datenschutz etc.</p></footer>
+    </div>
     ]]>
     </thumbnail>
 </element>
@@ -93,21 +115,19 @@
 <element>
     <title>Section</title>
     <desc>Das section-Element wird verwendet, um thematische Abschnitte oder Unterabschnitte in einer Webseite zu definieren. Es ermöglicht die logische Gruppierung von Inhalten, die einen gemeinsamen Kontext teilen. Ein section-Element kann innerhalb eines Hauptbereichs (wie main) oder anderer Abschnitte platziert werden, um die Struktur und Organisation einer Webseite zu verbessern.</desc>
-    <code>&lt;section&gt;
-        &lt;h2&gt;Über uns&lt;/h2&gt;
-        &lt;p&gt;Informationen über unser Unternehmen...&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section&gt;
-    &lt;h2&gt;Links und Infos&lt;/h2&gt;
-    &lt;p&gt;Hier sind infos aufgelistet&lt;/p&gt;
-&lt;/section&gt;</code>
+    <code>
+        &lt;section&gt;
+            &lt;h2&gt;Überschrift&lt;/h2&gt;
+            &lt;p&gt;Dies ist der Inhalt des Abschnitts.&lt;/p&gt;
+        &lt;/section&gt;
+    </code>
     <thumbnail>
     <![CDATA[
-    <section>
+    <section class="thumb-section thumb-t-b-r">
         <h2>Über uns</h2>
         <p>Informationen über unser Unternehmen...</p>
     </section>
-    <section>
+    <section class="thumb-section thumb-t-b-r">
         <h2>Links und Infos</h2>
         <p>Hier sind infos aufgelistet</p>
     </section>
@@ -133,17 +153,20 @@
     </code>
     <thumbnail>
         <![CDATA[ 
-        <section class="main-content">
-            <article>
-                <h2>Hauptartikel</h2>
-                <p>Inhalt des Hauptartikels.</p>
-            </article>
-        </section>
-        
-        <aside class="side-content">
-            <h3>Nebeninformation</h3>
-            <p>Zusätzliche Informationen oder Werbung könnten hier platziert werden.</p>
-        </aside>
+        <div class="thumb-screen-body thumb-t-b-r">
+            <header class="thumb-screen-header thumb-t-b-r">
+                <h2>Titel</h2>
+                <nav class="thumb-row-bordered thumb-t-b-r">
+                    <a href="#">Start</a>
+                    <a href="#">Infos</a>
+                    <a href="#">Kontakt</a>
+                </nav>
+            </header>
+            <aside class="thumb-screen-aside thumb-highlight thumb-t-b-r">
+            </aside>
+            <div class="thumb-screen-main thumb-t-b-r"></div>
+            <footer class="thumb-screen-footer thumb-t-b-r"><p>Impressum, Datenschutz etc.</p></footer>
+        </div>
         ]]>
     </thumbnail>
 </element>

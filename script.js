@@ -4,7 +4,9 @@ function create_code_part(index, text) {
     code_div = document.createElement('div');
     code_div.className = 'code-box';
     code_p = document.createElement('code');
-    code_p.appendChild(document.createTextNode(text));
+    code_pre = document.createElement('pre')
+    code_pre.appendChild(document.createTextNode(text));
+    code_p.appendChild(code_pre)
     code_div.appendChild(code_p);
     parent.appendChild(code_div);
 }
@@ -37,7 +39,7 @@ function update_cards(search_val) {
     main.childNodes.forEach(node => {
         if (node.className == "card"){
             console.log(node.childNodes[5].childNodes[1]);
-            if (node.childNodes[5].childNodes[1].innerText.includes(search_val)) node.style.display="flex";
+            if (node.childNodes[5].childNodes[1].textContent.toLowerCase().includes(search_val.toLowerCase())) node.style.display="flex";
             else node.style.display="none";
         }
     });
