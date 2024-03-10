@@ -1,7 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-<!-- h3 -->
-<!-- span -->
+<element>
+    <title>Heading Levels</title>
+    <desc>Die h1-, h2- und h3-Elemente werden verwendet, um verschiedene Ebenen von Überschriften in HTML darzustellen.</desc>
+    <code>
+        &lt;h1&gt;Überschrift Ebene 1&lt;/h1&gt;
+        &lt;h2&gt;Überschrift Ebene 2&lt;/h2&gt;
+        &lt;h3&gt;Überschrift Ebene 3&lt;/h3&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <h1>Überschrift Ebene 1</h1>
+        <h2>Überschrift Ebene 2</h2>
+        <h3>Überschrift Ebene 3</h3>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Preformatted Text and Paragraph</title>
+    <desc>Das pre-Element wird verwendet, um vorformatierten Text anzuzeigen, während das p-Element für Absätze verwendet wird.</desc>
+    <code>
+        &lt;pre&gt;Dies ist vorformatierter Text.&lt;/pre&gt;
+        &lt;p&gt;Dies ist ein normaler Absatz.&lt;/p&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <pre>Dies ist   ein    vorformatierter Text mit     abständen und oder    
+        versetzungen.</pre>
+        <p>Dies ist ein normaler Absatz.</p>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Figure</title>
+    <desc>Das figure-Element wird verwendet, um Medieninhalte wie Bilder mit dem figcapture-Element einer zugehörigen Bildunterschrift darzustellen.</desc>
+    <code>
+        &lt;figure&gt;
+            &lt;img src="assets/images/logo.jpg" alt="Beschreibender Text"&gt;
+            &lt;figcaption&gt;Bildunterschrift&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <figure>
+            <img src="assets/images/logo.jpg" alt="Logo Image">
+            <figcaption>Das ist unser Logo</figcaption>
+        </figure>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Horizontal Rule and Line Break</title>
+    <desc>Das hr-Element wird verwendet, um eine horizontale Linie zu erstellen, während das br-Element für einen Zeilenumbruch verwendet wird.</desc>
+    <code>
+        Text vor der dem Zeilenumbruch&lt;br&gt;Text nach dem Zeilenumbruch und vor der Linie&lt;hr style="width: 50%; border: 1px solid #fff;"&gt;Text nach der Linie
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        Text vor der dem Zeilenumbruch<br>Text nach dem Zeilenumbruch und vor der Linie<hr style="width: 50%; border: 1px solid #fff;">Text nach der Linie
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Div Container</title>
+    <desc>Das div-Element wird als Container verwendet, um andere HTML-Elemente zu gruppieren oder zu strukturieren.</desc>
+    <code>
+        &lt;div&gt;
+            &lt;p&gt;Inhalt im Div-Container.&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Listenelement 1&lt;/li&gt;
+                &lt;li&gt;Listenelement 2&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <div>
+            <p>Inhalt im div-Container.</p>
+            <ul>
+                <li>Listenelement 1</li>
+                <li>Listenelement 2</li>
+            </ul>
+        </div>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Ordered List, Unordered List, and List Items</title>
+    <desc>Das ol-Element wird für geordnete Listen (nummerierte Listen) verwendet, ul für ungeordnete Listen (Aufzählungslisten) und li für die Listenelemente.</desc>
+    <code>
+        &lt;ol&gt;
+            &lt;li&gt;Nummeriertes Listenelement 1&lt;/li&gt;
+            &lt;li&gt;Nummeriertes Listenelement 2&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;ul&gt;
+            &lt;li&gt;Aufzählungselement 1&lt;/li&gt;
+            &lt;li&gt;Aufzählungselement 2&lt;/li&gt;
+        &lt;/ul&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <ol>
+            <li>Nummeriertes Listenelement Apfel</li>
+            <li>Nummeriertes Listenelement Banane</li>
+        </ol>
+
+        <ul>
+            <li>Aufzählungselement Apfel</li>
+            <li>Aufzählungselement Banane</li>
+        </ul>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Definition List</title>
+    <desc>Das dl-Element wird verwendet, um eine Definitionenliste zu erstellen. dt steht für Definitionsterm und dd steht für Definition.</desc>
+    <code>
+        &lt;dl&gt;
+            &lt;dt&gt;Begriff 1&lt;/dt&gt;
+            &lt;dd&gt;Definition 1: Eine kurze Erklärung des Begriffs 1.&lt;/dd&gt;
+
+            &lt;dt&gt;Begriff 2&lt;/dt&gt;
+            &lt;dd&gt;Definition 2: Eine kurze Erklärung des Begriffs 2.&lt;/dd&gt;
+        &lt;/dl&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <dl>
+            <dt>Definition HTML:</dt>
+            <dd>HTML strukturiert Webseiteninhalte mithilfe von Tags wie Überschriften und Absätzen.</dd>
+
+            <dt>Definition CSS:</dt>
+            <dd>CSS gestaltet das Erscheinungsbild von HTML-Elementen auf Webseiten.</dd>
+        </dl>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Anchor (Link)</title>
+    <desc>Das a-Element wird verwendet, um Hyperlinks zu erstellen und auf andere Webseiten oder Ressourcen zu verweisen.</desc>
+    <code>
+        &lt;a href="https://www.example.com" target="_blank"&gt;Besuch Beispielseite&lt;/a&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <a href="https://wierbicki.org/" target="_blank">Besuche dem Meister seine Webseite</a>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Emphasized Text and Strong Text</title>
+    <desc>Das em-Element wird verwendet, um Text zu betonen (kursiv), während das strong-Element für stark betonten Text (fett) verwendet wird.</desc>
+    <code>
+        &lt;p&gt;Dieser Text ist &lt;em&gt;betont&lt;/em&gt; und dieser Text ist &lt;strong&gt;stark betont&lt;/strong&gt;.&lt;/p&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <p>Dieser Text ist <em>betont</em> und dieser Text ist <strong>stark betont</strong>.</p>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Span</title>
+    <desc>Das span-Element wird als Inline-Container verwendet, um Teile des Texts zu gruppieren oder Inline-Elemente zu umfassen.</desc>
+    <code>
+        &lt;p&gt;Dieser Text enthält einen &lt;span&gt;speziellen Abschnitt&lt;/span&gt;.&lt;/p&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <p>Dieser Text enthält einen <span style="color:purple">speziellen Abschnitt</span>.</p>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Blockquote</title>
+    <desc>Das blockquote-Element wird verwendet, um längere Textzitate zu kennzeichnen, die aus einem anderen Quelltext oder einer anderen Quelle stammen.</desc>
+    <code>
+        &lt;blockquote&gt;
+            &lt;p&gt;Dies ist ein längeres Zitat aus einer anderen Quelle.&lt;/p&gt;
+            &lt;footer&gt;Quelle: Autor&lt;/footer&gt;
+        &lt;/blockquote&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <blockquote cite="https://wierbicki.org/kuenstliche-intelligenz-im-personalwesen-chatgpt">
+            <p>Der Einsatz von KI ermöglicht es Unternehmen, an der Spitze der technologischen Entwicklung zu stehen und durch effizientere Prozesse sowie eine stärkere Mitarbeiterbindung einen Wettbewerbsvorteil zu erlangen.</p>
+            <div>Quelle: https://wierbicki.org/kuenstliche-intelligenz-im-personalwesen-chatgpt </div>
+        </blockquote>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>Abbreviation</title>
+    <desc>Das abbr-Element wird verwendet, um Abkürzungen oder Akronyme zu kennzeichnen und optional eine Erklärung bereitzustellen.</desc>
+    <code>
+        &lt;p&gt;HTML steht für &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <p>HTML steht für <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
+        ]]>
+    </thumbnail>
+</element>
+<element>
+    <title>HTML and CSS Table</title>
+    <desc> Das table-Element wird verwendet, um eine Tabelle in HTML zu erstellen, die Daten in Zeilen und Spalten organisiert.
+        Eine Tabelle besteht aus drei Hauptteilen: dem Kopf (thead), dem Hauptteil (tbody) und dem Fuß (tfoot).</desc>
+    <code>
+        &lt;table class="html-css-table"&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Abkürzungen&lt;/th&gt;
+                    &lt;th&gt;Bedeutung&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;HTML&lt;/td&gt;
+                    &lt;td&gt;Hypertext Markup Language&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;CSS&lt;/td&gt;
+                    &lt;td&gt;Cascading Style Sheets&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="2" class="footer-cell"&gt;Footer für Tabelle&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <table class="html-css-table">
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Bedeutung</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Hypertext Markup Language</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Cascading Style Sheets</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="footer-cell">Insgesamt 2 Abkürzungen in der Tabelle</td>
+                </tr>
+            </tfoot>
+        </table>
+        ]]>
+    </thumbnail>
+</element>
+
+
+
+
 <!-- abbr -->
 <!-- caption -->
 <!--patternol-->
@@ -9,11 +271,11 @@
 <!--img-->
 <!--svg Iframe -->
 <!--audio video source-->
-<!--form -->
+<!--form ??sind das schon kontaktdaten?-->
 <!--textarea -->
 <!--select oprion -->
 <!--details summary -->
-<!--und alles für css -->
+<!--Kombinator und attributselektor-->
 <element>
     <title>Header</title>
     <desc>Das header-Element wird verwendet, um eine Kopfzeile oder einen Abschnitt am Anfang eines Abschnitts oder einer Webseite darzustellen. Es enthält typischerweise Überschriften, Logos, Navigationsmenüs oder andere Elemente, die als Einführung oder Identifikation dienen.</desc>
@@ -161,78 +423,8 @@
         ]]>
     </thumbnail>
 </element>
-<element>
-    <title>Figure</title>
-    <desc>Das figure-Element wird verwendet, um Medieninhalte wie Bilder mit dem figcapture-Element einer zugehörigen Bildunterschrift darzustellen.</desc>
-    <code>
-        &lt;figure&gt;
-            &lt;img src="assets\images\logo.jpg" alt="Beschreibender Text"&gt;
-            &lt;figcaption&gt;Bildunterschrift&lt;/figcaption&gt;
-        &lt;/figure&gt;
-    </code>
-    <thumbnail>
-        <![CDATA[ 
-        <figure>
-            <img src="assets\images\logo.jpg" alt="Logo Image">
-            <figcaption>Das ist unser Logo</figcaption>
-        </figure>
-        ]]>
-    </thumbnail>
-</element>
 
-<element>
-    <title>Horizontale Line</title>
-    <desc>Das hr-Element wird verwendet, um eine horizontale Linie oder Trennung in HTML-Dokumenten zu erstellen.</desc>
-    <code>
-        &lt;p&gt;Beispieltext 1&lt;/p&gt;
-        &lt;hr style="width: 50%; border: 1px solid #fff;"&gt;
-        &lt;p&gt;Beispieltext 2&lt;/p&gt;
-    </code>
-    <thumbnail>
-        <![CDATA[ 
-        <p>Beispieltext 1</p>
-        <hr style="width: 50%; border: 1px solid #fff;">
-        <p>Beispieltext 2</p>
-        ]]>
-    </thumbnail>
-</element>
 
-<element>
-    <title>Emphasized Text</title>
-    <desc>Das em-Element wird verwendet, um Text zu betonen und kursiv darzustellen.</desc>
-    <code>
-        &lt;p&gt;Normaler Text &lt;em&gt;betonter Text&lt;/em&gt; weiterer normaler Text&lt;/p&gt;
-    </code>
-    <thumbnail>
-        <![CDATA[ 
-        <p>Normaler Text <em>betonter Text</em> weiterer normaler Text</p>
-        ]]>
-    </thumbnail>
-</element>
-<element>
-    <title>Definition List</title>
-    <desc>Das dl-Element wird verwendet, um eine Definitionenliste zu erstellen. dt steht für Definitionsterm und dd steht für Definition.</desc>
-    <code>
-        &lt;dl&gt;
-            &lt;dt&gt;Begriff 1&lt;/dt&gt;
-            &lt;dd&gt;Definition 1: Eine kurze Erklärung des Begriffs 1.&lt;/dd&gt;
-
-            &lt;dt&gt;Begriff 2&lt;/dt&gt;
-            &lt;dd&gt;Definition 2: Eine kurze Erklärung des Begriffs 2.&lt;/dd&gt;
-        &lt;/dl&gt;
-    </code>
-    <thumbnail>
-        <![CDATA[ 
-        <dl>
-            <dt>Definition HTML:</dt>
-            <dd>HTML strukturiert Webseiteninhalte mithilfe von Tags wie Überschriften und Absätzen.</dd>
-
-            <dt>Definition CSS:</dt>
-            <dd>CSS gestaltet das Erscheinungsbild von HTML-Elementen auf Webseiten.</dd>
-        </dl>
-        ]]>
-    </thumbnail>
-</element>
 
 <element>
     <title>Table</title>
