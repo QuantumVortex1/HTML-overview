@@ -328,6 +328,8 @@ und derselbe     Text   .
     </code>
     <thumbnail>
         <![CDATA[ 
+       
+        Damit kann man Sachen verlinken wie z.B.
         <a href="https://wierbicki.org/" target="_blank">Besuche dem Meister seine Webseite</a>
         ]]>
     </thumbnail>
