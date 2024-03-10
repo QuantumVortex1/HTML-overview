@@ -12,7 +12,7 @@
     <header class="hide-login">
     <?php include __DIR__.'/templates/header.php'; ?>
     </header>
-    <main name="form-filler">
+    <main id="form-filler">
         <?php 
         $loginusername = $_POST['loginusername'];
         $loginemail = $_POST['loginemail'];

@@ -13,7 +13,7 @@
     <header class="hide-login">
         <?php include '../php/templates/header.php'; ?>
     </header>
-    <main name="form-filler">
+    <main id="form-filler">
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

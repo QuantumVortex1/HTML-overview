@@ -27,7 +27,7 @@ body{
     background-size: 55px 55px;
 }
 
-main[name="index-main"]{
+#index-main{
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -37,7 +37,7 @@ main[name="index-main"]{
     overflow-x: hidden;
 }
 
-main[name="form-filler"] {
+#form-filler {
   margin: 1rem;
   background: rgb(26, 26, 26);
   
@@ -57,7 +57,7 @@ main[name="form-filler"] {
   padding: 1rem;
 }
 
-main[name="form-filler"] > p{
+#form-filler > p{
   font-size: larger;
   margin: .5em;
 }
@@ -462,7 +462,7 @@ footer a{
 
 
 .hide-login #forms-and-links-div a:last-child,
-.hide-login #forms-and-links-div #search-input {
+.hide-login #forms-and-links-div input[type="text"] {
   display: none;
 }
 .hide-contact a{
@@ -470,50 +470,6 @@ footer a{
   cursor: default;
   text-decoration: none;
   color: white;
-}
-nav {
-  background-color: #333; 
-  padding: 10px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style-type: none; 
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline; 
-  margin-right: 20px; 
-}
-
-nav ul li a {
-  color: white; 
-  text-decoration: none; 
-  font-size: 18px; 
-}
-
-nav ul li a:hover {
-  color: yellow; 
-}
-
-article {
-  border: 1px solid #ccc; 
-  padding: 20px; 
-  margin-bottom: 20px; 
-}
-
-h2 {
-  color: #edeaea; 
-}
-
-p {
-  line-height: 1.6; 
 }
 
 

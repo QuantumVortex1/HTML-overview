@@ -16,7 +16,7 @@
         <?php include __DIR__ . '/php/templates/header.php'; ?>
 
     </header>
-    <main id="index-main" name="index-main">
+    <main id="index-main">
 
         <?php include __DIR__ . '/php/templates/overlay.php'; ?>
         <?php load_all(); ?>
