@@ -33,8 +33,8 @@ require 'PHPMailer\src\SMTP.php';
 //         $mail->isSMTP();
 //         $mail->Host       = 'smtp.gmail.com';
 //         $mail->SMTPAuth   = true;
-//         $mail->Username   = 'htmlgruppe@gmail.com';
-//         $mail->Password   = 'jibk gyvr eusk bcuo';
+//         $mail->Username   = 'htmlgrupp""e@gmail.com';
+//         $mail->Password   = 'rxsc kkcp vgit lzjv';
 //         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 //         $mail->Port       = 587;
 
@@ -48,9 +48,9 @@ require 'PHPMailer\src\SMTP.php';
 //         $mail->send();
         echo <<<STR
             <h2>Vielen Dank für Ihre Nachricht, $name! Wir werden uns bald bei Ihnen melden.</h2>
-            <p><strong>Gesendete Email:</strong></p>
+            <p><strong>Email gesendet an:</strong> htmlgruppe@gmail.com</p>
             <p><strong>Von </strong> $name ($email)</p>
-            <p>$message</p>
+            <p><strong>Nachricht:<strong><br>$message</p>
             <form action="../index.php"><input class="form-submit" type="submit" value="Zurück zur Hauptseite" /></form>
             STR;
 //     } catch (Exception $e) {
