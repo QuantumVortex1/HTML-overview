@@ -212,14 +212,14 @@ und derselbe     Text   .
         <desc>Das figure-Element wird verwendet, um multimediale Inhalte wie Bilder, Diagramme, Videos oder Code-Snippets in einem HTML-Dokument zu gruppieren. Es ermöglicht eine semantische Strukturierung, indem es den Zusammenhang zwischen dem Hauptinhalt und der dazugehörigen Beschreibung herstellt.</desc>
         <code>
         &lt;figure&gt;
-            &lt;img src="assets/images/logo.jpg" alt="Beschreibender Text" width="200" height="135"&gt;
+            &lt;img src="assets/images/logo.png" alt="Beschreibender Text" width="200" height="135"&gt;
             &lt;figcaption&gt;Bildunterschrift&lt;/figcaption&gt;
         &lt;/figure&gt;
         </code>
         <thumbnail>
             <![CDATA[ 
         <figure>
-            <img src="assets/images/logo.jpg" alt="Logo Image" width="200" height="135">
+            <img src="assets/images/logo.png" alt="Logo Image" width="200" height="135">
             <figcaption>Das ist unser Logo</figcaption>
         </figure>
         ]]>
