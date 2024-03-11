@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
     <element>
-        <title>Header</title>
+        <title>header</title>
         <desc>Das header-Element wird verwendet, um eine Kopfzeile oder einen Abschnitt am Anfang eines Abschnitts oder einer Webseite darzustellen. Es enthält typischerweise Überschriften, Logos, Navigationsmenüs oder andere Elemente, die als Einführung oder Identifikation dienen.</desc>
         <code>&lt;header&gt;
         &lt;h1&gt;Titel&lt;/h1&gt;
@@ -27,7 +27,7 @@
     </element>
 
     <element>
-        <title>Nav</title>
+        <title>nav</title>
         <desc>Das nav-Element wird verwendet, um eine Navigation auf einer Webseite zu definieren. Es enthält typischerweise Links oder andere Navigationsinhalte, um Benutzer durch die Webseite zu führen.</desc>
         <code>&lt;nav&gt;
         &lt;ul&gt;
@@ -58,7 +58,7 @@
     </element>
 
     <element>
-        <title>Footer</title>
+        <title>footer</title>
         <desc>Das footer-Element wird verwendet, um einen Fußzeilenbereich am Ende einer Webseite oder eines Abschnitts zu definieren. Es dient dazu, Informationen anzuzeigen, die am Ende einer Webseite relevant sind, wie beispielsweise Urheberrechte, Kontaktinformationen, Links zu rechtlichen Hinweisen oder anderen Seiten. Diese Bereiche tragen dazu bei, die Benutzererfahrung zu verbessern, indem sie zusätzliche nützliche Informationen bereitstellen und die Navigation durch die Webseite erleichtern.</desc>
         <code>&lt;footer&gt;
         &lt;p&gt;&amp;copy; 2024 Mein Unternehmen&lt;/p&gt;
@@ -90,7 +90,36 @@
     </element>
 
     <element>
-        <title>Article</title>
+        <title>main</title>
+        <desc>Das main-Element wird verwendet, um den Hauptinhalt einer Webseite zu markieren. Es enthält den Hauptteil des Inhalts, der sich normalerweise nicht wiederholt (wie z.B. Navigationsleisten oder Fußzeilen) und repräsentiert den Hauptfokus der Seite.</desc>
+        <code>
+        &lt;main&gt;
+            &lt;h1&gt;Willkommen auf meiner Webseite&lt;/h1&gt;
+            &lt;p&gt;Hier befindet sich der Hauptinhalt.&lt;/p&gt;
+        &lt;/main&gt;
+        </code>
+        <thumbnail>
+        <![CDATA[
+        <div class="thumb-screen-body thumb-t-b-r">
+            <header class="thumb-screen-header thumb-t-b-r">
+                <h2>Titel</h2>
+                <nav class="thumb-row-bordered thumb-t-b-r">
+                    <a href="#">Start</a>
+                    <a href="#">Infos</a>
+                    <a href="#">Kontakt</a>
+                </nav>
+            </header>
+            <aside class="thumb-screen-aside thumb-t-b-r">
+            </aside>
+            <div class="thumb-screen-main thumb-highlight thumb-t-b-r"></div>
+            <footer class="thumb-screen-footer thumb-t-b-r"><p>Impressum, Datenschutz etc.</p></footer>
+        </div>
+        ]]>
+        </thumbnail>
+    </element>
+
+    <element>
+        <title>article</title>
         <desc> Das article-Element wird verwendet, um einen eigenständigen Inhalt oder Artikel auf einer Webseite zu definieren. Es enthält typischerweise Informationen wie News-Artikel, Blog-Beiträge, Forenbeiträge oder andere Inhalte, die unabhängig voneinander dargestellt werden können. Das article-Element trägt zur semantischen Strukturierung einer Webseite bei, indem es wichtige Inhalte hervorhebt und ihnen eine klare Bedeutung gibt.</desc>
         <code>&lt;article&gt;
         &lt;h2&gt;Neuer Blog-Beitrag&lt;/h2&gt;
@@ -113,7 +142,7 @@
     </element>
 
     <element>
-        <title>Section</title>
+        <title>section</title>
         <desc>Das section-Element wird verwendet, um thematische Abschnitte oder Unterabschnitte in einer Webseite zu definieren. Es ermöglicht die logische Gruppierung von Inhalten, die einen gemeinsamen Kontext teilen. Ein section-Element kann innerhalb eines Hauptbereichs (wie main) oder anderer Abschnitte platziert werden, um die Struktur und Organisation einer Webseite zu verbessern.</desc>
         <code>
         &lt;section&gt;
@@ -136,7 +165,7 @@
     </element>
 
     <element>
-        <title>Aside</title>
+        <title>aside</title>
         <desc>Das aside-Element wird verwendet, um Inhalte abzusondern, die nicht direkt zum Hauptinhalt gehören, sondern als Nebeninformation dienen.</desc>
         <code>
         &lt;section class="main-content"&gt;
@@ -187,7 +216,7 @@
         </thumbnail>
     </element>
     <element>
-        <title>Pre und p</title>
+        <title>pre und p</title>
         <desc>Das pre-Element wird verwendet, um vorformatierten Text auf einer Webseite darzustellen, wobei die Leerzeichen und Zeilenumbrüche beibehalten werden. Es ist nützlich für die Darstellung von Codebeispielen, Gedichten oder anderen Texten, bei denen die genaue Formatierung wichtig ist.&lt;br&gt; Das p-Element wird verwendet, um Absätze auf einer Webseite zu definieren. Es wird typischerweise für Fließtext verwendet und kann Text, Bilder oder andere Inline-Elemente enthalten.</desc>
         <code>
         &lt;pre&gt;Dies ist vorformatierter Text.&lt;/pre&gt;
@@ -208,8 +237,9 @@ und derselbe     Text   .
         </thumbnail>
     </element>
     <element>
-        <title>Figure</title>
-        <desc>Das figure-Element wird verwendet, um multimediale Inhalte wie Bilder, Diagramme, Videos oder Code-Snippets in einem HTML-Dokument zu gruppieren. Es ermöglicht eine semantische Strukturierung, indem es den Zusammenhang zwischen dem Hauptinhalt und der dazugehörigen Beschreibung herstellt.</desc>
+        <title>figure und figcaption</title>
+        <desc>Das figure-Element wird verwendet, um multimediale Inhalte wie Bilder, Diagramme, Videos oder Code-Snippets in einem HTML-Dokument zu gruppieren. Es ermöglicht eine semantische Strukturierung, indem es den Zusammenhang zwischen dem Hauptinhalt und der dazugehörigen Beschreibung herstellt. &lt;br&gt;
+            Das figcaption-Element wird innerhalb eines figure-Elements verwendet, um eine Bildunterschrift oder eine Beschreibung für das Bild bereitzustellen. Es ist eine semantische Möglichkeit, um den Text mit einem Bild zu verknüpfen.</desc>
         <code>
         &lt;figure&gt;
             &lt;img src="assets/images/logo.png" alt="Beschreibender Text" width="200" height="135"&gt;
@@ -245,7 +275,7 @@ und derselbe     Text   .
         </thumbnail>
     </element>
     <element>
-        <title>Div</title>
+        <title>div</title>
         <desc>Das div-Element steht für "division" und wird verwendet, um Abschnitte oder Gruppen von Inhalten auf einer Webseite zu erstellen. Es ist ein generisches Container-Element, das dazu dient, Bereiche auf der Seite zu definieren, die unabhängig voneinander gestaltet oder manipuliert werden können.</desc>
         <code>
         &lt;div&gt;
@@ -296,7 +326,7 @@ und derselbe     Text   .
         </thumbnail>
     </element>
     <element>
-        <title>Description List - dl, dt und dd</title>
+        <title>Listen - dl, dt und dd</title>
         <desc>Das dl-Element steht für "description list" und wird verwendet, um eine Liste von Begriffen und ihren zugehörigen Definitionen auf einer Webseite zu erstellen. Jeder Eintrag in der Liste besteht aus einem dt-Element für den Begriff und einem dd-Element für die Definition.</desc>
         <code>
         &lt;dl&gt;
@@ -320,7 +350,7 @@ und derselbe     Text   .
         </thumbnail>
     </element>
     <element>
-        <title>a - Links</title>
+        <title>Links - a</title>
         <desc>Das a-Element steht für "anchor" und wird verwendet, um Hyperlinks auf einer Webseite zu erstellen. Es ermöglicht es Benutzern, von einer Seite zur anderen zu navigieren oder zu anderen Ressourcen zu gelangen, indem sie auf den Link klicken.</desc>
         <code>
         &lt;a href="https://www.example.com" target="_blank"&gt;
@@ -344,12 +374,12 @@ und derselbe     Text   .
         </code>
         <thumbnail>
             <![CDATA[ 
-        <p>Dieser Text ist "normal".</p><br><em>Dieser Text ist durch em betont.</em><br><strong>Dieser Text ist durch strong stark betont.</strong></p>
+        <p>Dieser Text ist "normal".</p><br><em>Dieser Text ist durch em betont.</em><br><strong>Dieser Text ist durch strong stark betont.</strong>
         ]]>
         </thumbnail>
     </element>
     <element>
-        <title>Span</title>
+        <title>span</title>
         <desc>Das span-Element wird als Inline-Container verwendet, um Teile des Texts zu gruppieren oder Inline-Elemente zu umfassen.</desc>
         <code>
         &lt;p&gt;Dieser Text enthält einen &lt;span&gt;speziellen Abschnitt&lt;/span&gt;.&lt;/p&gt;
@@ -361,7 +391,7 @@ und derselbe     Text   .
         </thumbnail>
     </element>
     <element>
-        <title>Blockquote</title>
+        <title>blockquote</title>
         <desc>Das blockquote-Element wird verwendet, um längere Textzitate zu kennzeichnen, die aus einem anderen Quelltext oder einer anderen Quelle stammen.</desc>
         <code>
         &lt;blockquote&gt;
@@ -392,7 +422,7 @@ und derselbe     Text   .
         </thumbnail>
     </element>
     <element>
-        <title>Table</title>
+        <title>table</title>
         <desc> Das table-Element wird verwendet, um eine Tabelle in HTML zu erstellen, die Daten in Zeilen und Spalten organisiert.
         Eine Tabelle besteht aus drei Hauptteilen: dem Kopf (thead), dem Hauptteil (tbody) und dem Fuß (tfoot).</desc>
         <code>
@@ -450,7 +480,7 @@ und derselbe     Text   .
     </element>
 
     <element>
-        <title>Thead</title>
+        <title>thead</title>
         <desc> Das thead-Element wird in einer HTML-Tabelle verwendet, um den Kopfbereich (header) der Tabelle zu definieren. Normalerweise enthält der Kopfbereich die Spaltenüberschriften der Tabelle.</desc>
         <code>
         &lt;table&gt;
@@ -470,7 +500,7 @@ und derselbe     Text   .
         </code>
         <thumbnail>
             <![CDATA[ 
-        <table class="thumb-screen-table" border="1">
+        <table class="thumb-screen-table">
             <thead class="thumb-highlight">
                 <tr>
                     <th>Name</th>
@@ -498,7 +528,7 @@ und derselbe     Text   .
     </element>
 
     <element>
-        <title>Tbody</title>
+        <title>tbody</title>
         <desc> Das tbody-Element wird in einer HTML-Tabelle verwendet, um den Hauptbereich (body) der Tabelle zu definieren. Es enthält die eigentlichen Dateneinträge der Tabelle.</desc>
         <code>
         &lt;table&gt;
@@ -522,7 +552,7 @@ und derselbe     Text   .
         </code>
         <thumbnail>
             <![CDATA[ 
-        <table class="thumb-screen-table" border="1">
+        <table class="thumb-screen-table">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -550,7 +580,7 @@ und derselbe     Text   .
     </element>
 
     <element>
-        <title>Tfoot</title>
+        <title>tfoot</title>
         <desc> Das tfoot-Element wird in einer HTML-Tabelle verwendet, um den Fußbereich (footer) der Tabelle zu definieren. Es enthält typischerweise Zusammenfassungen, Gesamtsummen oder andere Informationen, die am Ende der Tabelle angezeigt werden sollen.</desc>
         <code>
         &lt;table&gt;
@@ -575,7 +605,7 @@ und derselbe     Text   .
         </code>
         <thumbnail>
             <![CDATA[ 
-        <table class="thumb-screen-table" border="1">
+        <table class="thumb-screen-table">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -615,7 +645,7 @@ und derselbe     Text   .
         </code>
         <thumbnail>
             <![CDATA[ 
-        <table class="thumb-screen-table" border="1">
+        <table class="thumb-screen-table">
             <thead>
                 <tr class="thumb-highlight">
                     <th>Name</th>
@@ -630,7 +660,7 @@ und derselbe     Text   .
                 <tr class="thumb-highlight">
                     <td>Anna</td>
                     <td>25</td>
-                </tr class="thumb-highlight">
+                </tr>
             </tbody>
             <tfoot>
                 <tr>
@@ -663,7 +693,7 @@ und derselbe     Text   .
         </code>
         <thumbnail>
             <![CDATA[ 
-        <table class="thumb-screen-table" border="1">
+        <table class="thumb-screen-table">
             <thead>
                 <tr>
                     <th class="thumb-highlight">Name</th>
@@ -704,7 +734,7 @@ und derselbe     Text   .
         </code>
         <thumbnail>
             <![CDATA[ 
-        <table class="thumb-screen-table" border="1">
+        <table class="thumb-screen-table">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -732,7 +762,7 @@ und derselbe     Text   .
     </element>
 
     <element>
-        <title>Caption</title>
+        <title>caption</title>
         <desc>
         Das table-Element kann eine optionale Überschrift haben, die durch das caption-Element definiert wird.
         Die Überschrift befindet sich normalerweise über der Tabelle und gibt dem Benutzer einen kurzen Überblick über den Inhalt der Tabelle.
@@ -756,7 +786,7 @@ und derselbe     Text   .
         </code>
         <thumbnail>
             <![CDATA[ 
-        <table class="thumb-screen-table" border="1">
+        <table class="thumb-screen-table">
         <caption class="thumb-caption thumb-highlight">Gegenüberstellung Max und Lisa</caption>
             <thead>
                 <tr>
@@ -784,23 +814,23 @@ und derselbe     Text   .
         </thumbnail>
     </element>
     <element>
-        <title>IMG</title>
+        <title>img</title>
         <desc>
         Das img-Element wird verwendet, um Bilder in HTML einzufügen. Es erfordert das "src"-Attribut, das den Pfad zur Bilddatei angibt.
         Zusätzliche Attribute wie "alt" (alternative Textbeschreibung) und "width"/"height" (Breite/Höhe des Bildes) können optional hinzugefügt werden.  
         </desc>
         <code>
-            &lt;img src="logo.png" alt="Beschreibung des Bildes"&gt;
+            &lt;img src="logo.png" alt="Beschreibung"&gt;
         </code>
 
         <thumbnail>
             <![CDATA[ 
-        <img src="assets\images\logo.png" alt="Unser Logo" width="200" height="135">
+        <img src="assets/images/logo.png" alt="Unser Logo" width="200" height="135">
         ]]>
         </thumbnail>
     </element>
     <element>
-        <title>SVG</title>
+        <title>svg</title>
         <desc>
         Das svg-Element wird verwendet, um skalierbare Vektorgrafiken in HTML einzufügen. SVG-Grafiken können Formen, Pfade und Texte enthalten.
         </desc>
@@ -819,7 +849,7 @@ und derselbe     Text   .
         </thumbnail>
     </element>
     <element>
-        <title>iFrame</title>
+        <title>iframe</title>
         <desc>
         Das iframe-Element wird verwendet, um eine eingebettete HTML-Seite in eine andere HTML-Seite einzufügen. Es ermöglicht das Anzeigen von Inhalten von externen Quellen.
         Das "src"-Attribut definiert die URL der eingebetteten Seite. Weitere Attribute wie "width", "height", und "frameborder" können optional hinzugefügt werden. </desc>
@@ -832,14 +862,14 @@ und derselbe     Text   .
 
         <thumbnail>
             <![CDATA[ 
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         ]]>
         </thumbnail>
     </element>
 
     <!--audio video source-->
     <element>
-        <title>Audio</title>
+        <title>audio</title>
         <desc>Das audio-Element wird verwendet, um Audioinhalte in eine Webseite einzubetten, die von Benutzern abgespielt werden können. Es ermöglicht das Hinzufügen von Musik, Soundeffekten, Sprachaufnahmen und anderen Audioquellen. Das src-Attribut wird verwendet, um die URL der Audiodatei anzugeben, und es können weitere Attribute wie controls für die Wiedergabesteuerung und autoplay für die automatische Wiedergabe verwendet werden.</desc>
         <code>
         &lt;audio src="audio.mp3" controls&gt;
@@ -856,7 +886,7 @@ und derselbe     Text   .
     </element>
 
     <element>
-        <title>Video</title>
+        <title>video</title>
         <desc>Das video-Element wird verwendet, um Videoinhalte in eine Webseite einzubetten, die von Benutzern abgespielt werden können. Es ermöglicht das Hinzufügen von Filmen, Clips, Tutorials und anderen visuellen Inhalten. Das src-Attribut wird verwendet, um die URL des Videofiles anzugeben, und es können weitere Attribute wie controls für die Wiedergabesteuerung und autoplay für die automatische Wiedergabe verwendet werden.</desc>
         <code>
         &lt;video src="video.mp4" controls&gt;
@@ -873,7 +903,7 @@ und derselbe     Text   .
     </element>
 
     <element>
-        <title>Source</title>
+        <title>source</title>
         <desc>Das source-Element wird innerhalb eines video- oder audio-Elements verwendet, um alternative Quellen für das Medienelement anzugeben. Dies ermöglicht es, verschiedene Formate desselben Mediainhalts anzubieten, um sicherzustellen, dass das Medium in verschiedenen Browsern und auf verschiedenen Geräten abgespielt werden kann. Jedes source-Element enthält das src-Attribut, das die URL der Mediendatei angibt, sowie das type-Attribut, das den MIME-Typ des Mediainhalts definiert.</desc>
         <code>
         &lt;video controls&gt;
@@ -897,7 +927,7 @@ und derselbe     Text   .
     <!--form label -->
 
     <element>
-        <title>Form</title>
+        <title>form</title>
         <desc>Das form-Element wird verwendet, um ein Formular auf einer Webseite zu definieren. Formulare ermöglichen es Benutzern, Daten an einen Server zu senden. Innerhalb des form-Elements können verschiedene Formularelemente wie Textfelder, Auswahllisten, Schaltflächen usw. platziert werden.</desc>
         <code>
         &lt;form action="/submit_form" method="post"&gt;
@@ -926,7 +956,7 @@ und derselbe     Text   .
     </element>
 
     <element>
-        <title>Label</title>
+        <title>label</title>
         <desc>Das label-Element wird verwendet, um Beschriftungen für Formularelemente bereitzustellen. Der for-Attributwert des label-Elements verweist auf das id-Attribut des zugehörigen Formularelements, sodass Benutzer auf die Beschriftung klicken können, um das zugehörige Formularelement auszuwählen.</desc>
         <code>
         &lt;label for="username"&gt;Benutzername:&lt;/label&gt;
@@ -941,7 +971,7 @@ und derselbe     Text   .
     </element>
     <!--textarea -->
     <element>
-        <title>Textarea</title>
+        <title>textarea</title>
         <desc>Das textarea-Element wird verwendet, um mehrzeilige Texteingaben auf einer Webseite zu ermöglichen. Es wird häufig für Kommentarfelder, Beschreibungen oder andere längere Texteingaben verwendet. Der Inhalt eines textarea-Elements kann sowohl initial als auch durch den Benutzer festgelegt werden.</desc>
         <code>
         &lt;textarea id="area-1" name="area-1" rows="4" cols="50"&gt;
@@ -959,7 +989,7 @@ Auch mit Zeilenumbrüchen.
     </element>
     <!--select option -->
     <element>
-        <title>Select</title>
+        <title>select</title>
         <desc>Das select-Element wird verwendet, um eine Auswahlliste auf einer Webseite zu erstellen. Es ermöglicht Benutzern, eine Option aus einer Liste von vordefinierten Optionen auszuwählen. Jedes select-Element kann eine oder mehrere option-Elemente enthalten, die die verfügbaren Auswahlmöglichkeiten darstellen.</desc>
         <code>
         &lt;select id="land" name="land"&gt;
@@ -971,16 +1001,15 @@ Auch mit Zeilenumbrüchen.
         </code>
         <thumbnail>
             <![CDATA[
-            <select name="land" expand>
+            <select name="land">
                 <option value="none">Wähle dein Land</option>
             </select>
-            </textarea>
             ]]>
         </thumbnail>
     </element>
 
     <element>
-        <title>Option</title>
+        <title>option</title>
         <desc>Das option-Element wird innerhalb eines select- oder datalist-Elements verwendet, um eine Option in einer Auswahlliste oder einer Dataliste zu definieren. Jede option kann einen Wert haben, der an den Server gesendet wird, wenn die Option ausgewählt wird, sowie eine sichtbare Beschriftung, die dem Benutzer angezeigt wird.</desc>
         <code>
         &lt;select&gt;
@@ -1001,7 +1030,7 @@ Auch mit Zeilenumbrüchen.
     </element>
     <!--details summary -->
     <element>
-        <title>Details und Summary</title>
+        <title>details und summary</title>
         <desc>Das details-Element wird verwendet, um zusätzliche Informationen anzuzeigen, die standardmäßig verborgen sind, aber durch den Benutzer sichtbar gemacht werden können. Es wird oft mit dem summary-Element kombiniert, das als Schaltfläche oder Überschrift dient, um die Details ein- oder auszublenden.</desc>
         <code>
         &lt;details&gt;
@@ -1021,7 +1050,7 @@ Auch mit Zeilenumbrüchen.
 
 
     <element>
-        <title>Input: Text</title>
+        <title>input: text</title>
         <desc>Das input-Element mit dem Typ text wird verwendet, um ein einfaches Texteingabefeld in
             Webformularen zu erstellen. Benutzer können hier Text eingeben, wie z. B. ihren Namen,
             eine Nachricht oder andere kurze Informationen.</desc>
@@ -1034,7 +1063,7 @@ Auch mit Zeilenumbrüchen.
     </element>
 
     <element>
-        <title>Input: Checkbox</title>
+        <title>input: checkbox</title>
         <desc>Das input-Element mit dem Typ checkbox wird verwendet, um eine einzelne Checkbox in
             Webformularen zu erstellen. Benutzer können diese Checkbox aktivieren oder deaktivieren,
             um eine Auswahl zu treffen oder eine Bedingung zu bestätigen.</desc>
@@ -1063,7 +1092,7 @@ Auch mit Zeilenumbrüchen.
     </element>
 
     <element>
-        <title>Input: Passwort</title>
+        <title>input: passwort</title>
         <desc>Das input-Element mit dem Typ Passwort wird verwendet, um ein Eingabefeld für
             Passwörter in Webformularen zu erstellen. Benutzer können hier ihr Passwort eingeben,
             das aus Gründen der Sicherheit maskiert wird.</desc>
@@ -1079,7 +1108,7 @@ Auch mit Zeilenumbrüchen.
     </element>
 
     <element>
-        <title>Input: Radio</title>
+        <title>input: radio</title>
         <desc>Das input-Element mit dem Typ Radio wird verwendet, um eine Liste von Optionen in
             Webformularen darzustellen, bei der Benutzer nur eine Option auswählen können. Jede
             Option wird durch einen Kreis gekennzeichnet, aus dem nur eine ausgewählt werden kann.</desc>
@@ -1108,7 +1137,7 @@ Auch mit Zeilenumbrüchen.
     </element>
 
     <element>
-        <title>Input: Submit</title>
+        <title>input: submit</title>
         <desc>Das input-Element mit dem Typ Submit wird verwendet, um eine Schaltfläche in
             Webformularen darzustellen, die verwendet wird, um das Formular abzusenden und die
             eingegebenen Daten an den Server zu senden.</desc>
@@ -1121,7 +1150,7 @@ Auch mit Zeilenumbrüchen.
     </element>
 
     <element>
-        <title>Input: Number</title>
+        <title>input: number</title>
         <desc>Das input-Element mit dem Typ Number wird verwendet, um ein Eingabefeld für numerische
             Werte in Webformularen darzustellen. Benutzer können hier numerische Werte wie Zahlen
             eingeben.</desc>
@@ -1134,7 +1163,7 @@ Auch mit Zeilenumbrüchen.
     </element>
 
     <element>
-        <title>Input: Datum</title>
+        <title>input: datum</title>
         <desc>Das input-Element mit dem Typ Datum wird verwendet, um ein Eingabefeld für
             Datumsangaben in Webformularen zu erstellen. Benutzer können hier ein Datum auswählen,
             beispielsweise für Geburtsdaten oder Terminvereinbarungen.</desc>
@@ -1147,7 +1176,7 @@ Auch mit Zeilenumbrüchen.
     </element>
 
     <element>
-        <title>Input: E-Mail</title>
+        <title>input: email</title>
         <desc>Das input-Element mit dem Typ email wird verwendet, um ein Eingabefeld für
             E-Mail-Adressen in Webformularen zu erstellen. Es validiert automatisch die Eingabe, um
             sicherzustellen, dass der Benutzer eine gültige E-Mail-Adresse eingibt.</desc>
@@ -1160,7 +1189,7 @@ Auch mit Zeilenumbrüchen.
     </element>
 
     <element>
-        <title>Input: Datei</title>
+        <title>input: datei</title>
         <desc>Das input-Element mit dem Typ Datei wird verwendet, um Benutzern das Hochladen von
             Dateien in Webformularen zu ermöglichen. Benutzer können hier eine Datei von ihrem
             lokalen Gerät auswählen, um sie hochzuladen.</desc>
@@ -1173,7 +1202,7 @@ Auch mit Zeilenumbrüchen.
     </element>
 
     <element>
-        <title>Button</title>
+        <title>button</title>
         <desc>Das button-Element wird verwendet, um einen anklickbaren Button auf einer Webseite zu
             erstellen, der Benutzerinteraktionen auslöst, wie beispielsweise das Absenden eines
             Formulars oder das Ausführen einer JavaScript-Funktion.</desc>
