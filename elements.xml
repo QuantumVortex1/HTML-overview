@@ -3,9 +3,10 @@
     <element>
         <title>header</title>
         <desc>Das header-Element wird verwendet, um eine Kopfzeile oder einen Abschnitt am Anfang eines Abschnitts oder einer Webseite darzustellen. Es enthält typischerweise Überschriften, Logos, Navigationsmenüs oder andere Elemente, die als Einführung oder Identifikation dienen.</desc>
-        <code>&lt;header&gt;
-        &lt;h1&gt;Titel&lt;/h1&gt;
-    &lt;/header&gt;</code>
+        <code>
+        &lt;header&gt;
+            &lt;h1&gt;Titel&lt;/h1&gt;
+        &lt;/header&gt;</code>
         <thumbnail>
             <![CDATA[
         <div class='thumb-screen-body thumb-t-b-r'>
@@ -29,13 +30,14 @@
     <element>
         <title>nav</title>
         <desc>Das nav-Element wird verwendet, um eine Navigation auf einer Webseite zu definieren. Es enthält typischerweise Links oder andere Navigationsinhalte, um Benutzer durch die Webseite zu führen.</desc>
-        <code>&lt;nav&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Über uns&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/nav&gt;</code>
+        <code>
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Über uns&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;</code>
         <thumbnail>
             <![CDATA[
     <div class="thumb-screen-body thumb-t-b-r">
@@ -60,15 +62,17 @@
     <element>
         <title>footer</title>
         <desc>Das footer-Element wird verwendet, um einen Fußzeilenbereich am Ende einer Webseite oder eines Abschnitts zu definieren. Es dient dazu, Informationen anzuzeigen, die am Ende einer Webseite relevant sind, wie beispielsweise Urheberrechte, Kontaktinformationen, Links zu rechtlichen Hinweisen oder anderen Seiten. Diese Bereiche tragen dazu bei, die Benutzererfahrung zu verbessern, indem sie zusätzliche nützliche Informationen bereitstellen und die Navigation durch die Webseite erleichtern.</desc>
-        <code>&lt;footer&gt;
-        &lt;p&gt;&amp;copy; 2024 Mein Unternehmen&lt;/p&gt;
-        &lt;nav&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Datenschutz&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;
-    &lt;/footer&gt;</code>
+        <code>
+        &lt;footer&gt;
+            &lt;p&gt;&amp;copy; 2024 Mein Unternehmen&lt;/p&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Datenschutz&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/footer&gt;
+        </code>
         <thumbnail>
             <![CDATA[
     <div class="thumb-screen-body thumb-t-b-r">
@@ -121,13 +125,15 @@
     <element>
         <title>article</title>
         <desc> Das article-Element wird verwendet, um einen eigenständigen Inhalt oder Artikel auf einer Webseite zu definieren. Es enthält typischerweise Informationen wie News-Artikel, Blog-Beiträge, Forenbeiträge oder andere Inhalte, die unabhängig voneinander dargestellt werden können. Das article-Element trägt zur semantischen Strukturierung einer Webseite bei, indem es wichtige Inhalte hervorhebt und ihnen eine klare Bedeutung gibt.</desc>
-        <code>&lt;article&gt;
-        &lt;h2&gt;Neuer Blog-Beitrag&lt;/h2&gt;
-        &lt;p&gt;Inhalt des Blog-Beitrags...&lt;/p&gt;
-        &lt;footer&gt;
-            &lt;p&gt;Veröffentlicht: 01.03.2024 von John Doe&lt;/p&gt;
-        &lt;/footer&gt;
-    &lt;/article&gt;</code>
+        <code>
+        &lt;article&gt;
+            &lt;h2&gt;Neuer Blog-Beitrag&lt;/h2&gt;
+            &lt;p&gt;Inhalt des Blog-Beitrags...&lt;/p&gt;
+            &lt;footer&gt;
+                &lt;p&gt;Veröffentlicht: 01.03.2024 von John Doe&lt;/p&gt;
+            &lt;/footer&gt;
+        &lt;/article&gt;
+        </code>
         <thumbnail>
             <![CDATA[
     <article class="thumb-article thumb-t-b-r">
@@ -259,7 +265,11 @@ und derselbe     Text   .
         <title>hr und br</title>
         <desc>Das hr-Element wird verwendet, um eine horizontale Linie zu erstellen, während das br-Element für einen Zeilenumbruch verwendet wird.</desc>
         <code>
-        Text vor der dem Zeilenumbruch&lt;br&gt;Text nach dem Zeilenumbruch und vor der Linie&lt;hr style="width: 50%; border: 1px solid #fff;"&gt;Text nach der Linie
+        Text vor der dem Zeilenumbruch
+        &lt;br&gt;
+        Text nach dem Zeilenumbruch und vor der Linie
+        &lt;hr&gt;
+        Text nach der Linie
         </code>
         <thumbnail>
             <![CDATA[ 
@@ -320,7 +330,7 @@ und derselbe     Text   .
 
         <ul class="thumb-small-box thumb-t-b-r">
             <li>Das hier ist ul</li>
-            <li>Ohne Nummerierung/li>
+            <li>Ohne Nummerierung</li>
         </ul>
         ]]>
         </thumbnail>
@@ -331,10 +341,10 @@ und derselbe     Text   .
         <code>
         &lt;dl&gt;
             &lt;dt&gt;Begriff 1&lt;/dt&gt;
-            &lt;dd&gt;Definition 1: Eine kurze Erklärung des Begriffs 1.&lt;/dd&gt;
+            &lt;dd&gt;Kurze Erklärung des Begriffs 1.&lt;/dd&gt;
 
             &lt;dt&gt;Begriff 2&lt;/dt&gt;
-            &lt;dd&gt;Definition 2: Eine kurze Erklärung des Begriffs 2.&lt;/dd&gt;
+            &lt;dd&gt;Kurze Erklärung des Begriffs 2.&lt;/dd&gt;
         &lt;/dl&gt;
         </code>
         <thumbnail>
@@ -370,7 +380,7 @@ und derselbe     Text   .
         Das strong-Element wird verwendet, um Text auf einer Webseite stark zu betonen. Der Text, der von strong umgeben ist, wird standardmäßig fett dargestellt. Es wird oft für Schlüsselwörter, wichtige Informationen oder Abschnitte verwendet, um sie visuell hervorzuheben und ihre Bedeutung zu betonen.</desc>
         <code>
         &lt;em&gt;Dieser Text ist durch em betont.&lt;/em&gt; 
-        &lt;strong&gt;Dieser Text ist durch strong stark betont.&lt;/strong&gt;
+        &lt;strong&gt;Dieser Text ist durch strong betont.&lt;/strong&gt;
         </code>
         <thumbnail>
             <![CDATA[ 
@@ -382,7 +392,9 @@ und derselbe     Text   .
         <title>span</title>
         <desc>Das span-Element wird als Inline-Container verwendet, um Teile des Texts zu gruppieren oder Inline-Elemente zu umfassen.</desc>
         <code>
-        &lt;p&gt;Dieser Text enthält einen &lt;span&gt;speziellen Abschnitt&lt;/span&gt;.&lt;/p&gt;
+        &lt;p&gt;Dieser Text enthält einen 
+        &lt;span&gt;speziellen Abschnitt&lt;/span&gt;.
+        &lt;/p&gt;
         </code>
         <thumbnail>
             <![CDATA[ 
@@ -395,7 +407,7 @@ und derselbe     Text   .
         <desc>Das blockquote-Element wird verwendet, um längere Textzitate zu kennzeichnen, die aus einem anderen Quelltext oder einer anderen Quelle stammen.</desc>
         <code>
         &lt;blockquote&gt;
-            &lt;p&gt;Dies ist ein längeres Zitat aus einer anderen Quelle.&lt;/p&gt;
+            &lt;p&gt;Längeres Zitat aus fremder Quelle.&lt;/p&gt;
             &lt;footer&gt;Quelle: Autor&lt;/footer&gt;
         &lt;/blockquote&gt;
         </code>
@@ -413,7 +425,10 @@ und derselbe     Text   .
         <desc>Das abbr-Element wird verwendet, um Abkürzungen oder Akronyme zu kennzeichnen und optional eine Erklärung bereitzustellen.</desc>
         <code>
         &lt;p&gt;Im Web arbeitet man viel mit 
-        &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+            &lt;abbr title="Hypertext Markup Language"&gt;
+            HTML
+            &lt;/abbr&gt;.
+        &lt;/p&gt;
         </code>
         <thumbnail>
             <![CDATA[ 
@@ -820,7 +835,7 @@ und derselbe     Text   .
         Zusätzliche Attribute wie "alt" (alternative Textbeschreibung) und "width"/"height" (Breite/Höhe des Bildes) können optional hinzugefügt werden.  
         </desc>
         <code>
-            &lt;img src="logo.png" alt="Beschreibung"&gt;
+        &lt;img src="logo.png" alt="Beschreibung"&gt;
         </code>
 
         <thumbnail>
@@ -835,17 +850,15 @@ und derselbe     Text   .
         Das svg-Element wird verwendet, um skalierbare Vektorgrafiken in HTML einzufügen. SVG-Grafiken können Formen, Pfade und Texte enthalten.
         </desc>
         <code>
-            &lt;svg width="100" height="100"&gt;
-                &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;
-            &lt;/svg&gt;
+        &lt;svg width="100" height="100"&gt;
+            &lt;circle cx="50" cy="50" r="40" fill="red" /&gt;
+        &lt;/svg&gt;
         </code>
         <thumbnail>
-            <![CDATA[ 
-        <svg width="150" height="150">
-            <rect width="100" height="100" stroke="black" stroke-width="3" fill="green" />
-            <circle cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="red" />
-        </svg>
-        ]]>
+            <![CDATA[
+            <!-- Copied from Iconbuddy -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 72 72"><defs><path id="openmojiSvg0" d="M53.404 44.132a5.556 5.556 0 0 0-9.242 4.157v4.444a5.556 5.556 0 0 0 11.11 0V50.48h-4.444m-10.741-7.748L35.643 58.29L31.2 42.732m-4.81 3.101c-.455-1.772-2.423-3.102-4.781-3.102c-2.696 0-4.88 1.739-4.88 3.886c0 2.145 2.184 3.886 4.88 3.886l-.1.013c2.696 0 4.881 1.741 4.881 3.886c0 2.148-2.185 3.886-4.88 3.886c-2.36 0-4.327-1.332-4.782-3.104"/></defs><g stroke="#000"><g stroke-width="8" transform="translate(-134.7 18.68)scale(.8851)"><path stroke-linecap="round" stroke-linejoin="round" d="M192.9-2.429v22m15.6-15.556l-15.6 15.56m22-.005h-44m22 0L177.3 4.01"/><ellipse cx="192.9" cy="-3.328" rx=".87" ry=".899"/><ellipse cx="150.2" cy="-145.5" rx=".87" ry=".899" transform="rotate(45)"/><ellipse cx="19.57" cy="-170" rx=".87" ry=".899" transform="rotate(90)"/><ellipse cx="19.57" cy="-215.8" rx=".87" ry=".899" transform="rotate(90)"/><ellipse cx="-122.6" cy="-127.3" rx=".87" ry=".899" transform="rotate(135)"/></g><use href="#openmojiSvg0" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" clip-rule="evenodd"/></g><g transform="translate(4.97 4.974)scale(.8621)"><g class="UnoptimicedTransforms" transform="translate(-134.7 -44.62)scale(.8851)"><path stroke="#000" stroke-linejoin="round" stroke-width="18" d="m192.9 69.08l-.04 22.01" class="UnoptimicedTransforms"/><path d="m170.9 82.08l-.002 9h44v-9z" color="#000"/><path d="M160.027 91.09c0-5.435 4.432-9.841 9.9-9.841s9.902 4.406 9.902 9.841zm45.753 0c0-5.435 4.432-9.841 9.9-9.841s9.902 4.406 9.902 9.841z" class="UnoptimicedTransforms"/><circle cx="176.7" cy="74.88" r="9.83"/><circle cx="209.1" cy="74.88" r="9.83"/><circle cx="192.9" cy="68.19" r="9.83"/><rect width="22.56" height="3.551" x="182.1" y="80.08" rx="3.482" ry="3.482"/></g><g fill="#f1b31c" stroke="#f1b31c" stroke-width="8" transform="translate(-134.7 18.68)scale(.8851)"><path stroke-linecap="round" stroke-linejoin="round" d="M192.9-2.429V41.57m15.6-37.555L177.3 35.13m37.6-15.56h-44m37.6 15.56L177.3 4.015"/><ellipse cx="192.9" cy="42.47" rx=".87" ry=".899"/><ellipse cx="192.9" cy="-3.328" rx=".87" ry=".899"/><ellipse cx="150.2" cy="-99.67" rx=".87" ry=".899" transform="rotate(45)"/><ellipse cx="150.2" cy="-145.5" rx=".87" ry=".899" transform="rotate(45)"/><ellipse cx="19.57" cy="-170" rx=".87" ry=".899" transform="rotate(90)"/><ellipse cx="19.57" cy="-215.8" rx=".87" ry=".899" transform="rotate(90)"/><ellipse cx="-122.6" cy="-127.3" rx=".87" ry=".899" transform="rotate(135)"/><ellipse cx="-122.6" cy="-173.1" rx=".87" ry=".899" transform="rotate(135)"/></g><ellipse cx="56.43" cy="35.93" fill="#f1b31c" rx="4.206" ry="4.238"/><ellipse cx="15.64" cy="35.93" fill="#f1b31c" rx="4.206" ry="4.238"/><rect width="58.1" height="29.02" x="6.95" y="36" rx="4.698" ry="5"/><rect width="56.94" height="12.72" x="7.524" y="35.99" stroke="#000" stroke-linecap="square" stroke-width="1.149" rx="0" ry="0"/><use href="#openmojiSvg0" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" clip-rule="evenodd"/><ellipse cx="21.61" cy="21.56" fill="#f1b31c" rx="4.206" ry="4.238"/><ellipse cx="36.04" cy="15.42" fill="#f1b31c" rx="4.206" ry="4.238"/><ellipse cx="50.46" cy="21.56" fill="#f1b31c" rx="4.206" ry="4.238"/></g></svg>
+            ]]>
         </thumbnail>
     </element>
     <element>
@@ -857,7 +870,7 @@ und derselbe     Text   .
         <br/>
         Beispiel:
         <code>
-            &lt;iframe src=""https://www.example.com" width="200" height="150" frameborder="0"&gt;&lt;/iframe&gt;
+        &lt;iframe src=""https://www.example.com""&gt;&lt;/iframe&gt;
         </code>
 
         <thumbnail>
@@ -974,7 +987,7 @@ und derselbe     Text   .
         <title>textarea</title>
         <desc>Das textarea-Element wird verwendet, um mehrzeilige Texteingaben auf einer Webseite zu ermöglichen. Es wird häufig für Kommentarfelder, Beschreibungen oder andere längere Texteingaben verwendet. Der Inhalt eines textarea-Elements kann sowohl initial als auch durch den Benutzer festgelegt werden.</desc>
         <code>
-        &lt;textarea id="area-1" name="area-1" rows="4" cols="50"&gt;
+        &lt;textarea id="area-1" name="area-1" rows="4"&gt;
         Hier kann der Benutzer einen längeren Text eingeben.
         &lt;/textarea&gt;
         </code>
@@ -1054,7 +1067,9 @@ Auch mit Zeilenumbrüchen.
         <desc>Das input-Element mit dem Typ text wird verwendet, um ein einfaches Texteingabefeld in
             Webformularen zu erstellen. Benutzer können hier Text eingeben, wie z. B. ihren Namen,
             eine Nachricht oder andere kurze Informationen.</desc>
-        <code>&lt;input type="text"&gt;</code>
+        <code>
+        &lt;input type="text"&gt;
+        </code>
         <thumbnail>
             <![CDATA[
             <input type="text" placeholder="search" id="example-text-input">
@@ -1067,7 +1082,9 @@ Auch mit Zeilenumbrüchen.
         <desc>Das input-Element mit dem Typ checkbox wird verwendet, um eine einzelne Checkbox in
             Webformularen zu erstellen. Benutzer können diese Checkbox aktivieren oder deaktivieren,
             um eine Auswahl zu treffen oder eine Bedingung zu bestätigen.</desc>
-        <code>&lt;input type="checkbox" name="name" value="yes"&gt;</code>
+        <code>
+        &lt;input type="checkbox" name="name" value="yes"&gt;
+        </code>
         <thumbnail>
             <![CDATA[ 
             <strong>Wähle min. eine Option:</strong>
@@ -1096,7 +1113,9 @@ Auch mit Zeilenumbrüchen.
         <desc>Das input-Element mit dem Typ Passwort wird verwendet, um ein Eingabefeld für
             Passwörter in Webformularen zu erstellen. Benutzer können hier ihr Passwort eingeben,
             das aus Gründen der Sicherheit maskiert wird.</desc>
-        <code>&lt;input type="password"&gt;</code>
+        <code>
+        &lt;input type="password"&gt;
+        </code>
         <thumbnail>
             <![CDATA[ 
             <label for="example-password-input" class="example-label-v">
@@ -1112,7 +1131,9 @@ Auch mit Zeilenumbrüchen.
         <desc>Das input-Element mit dem Typ Radio wird verwendet, um eine Liste von Optionen in
             Webformularen darzustellen, bei der Benutzer nur eine Option auswählen können. Jede
             Option wird durch einen Kreis gekennzeichnet, aus dem nur eine ausgewählt werden kann.</desc>
-        <code>&lt;input type="radio"&gt;</code>
+        <code>
+        &lt;input type="radio"&gt;
+        </code>
         <thumbnail>
             <![CDATA[ 
         <strong>Wähle genau eine Option:</strong>
@@ -1141,7 +1162,9 @@ Auch mit Zeilenumbrüchen.
         <desc>Das input-Element mit dem Typ Submit wird verwendet, um eine Schaltfläche in
             Webformularen darzustellen, die verwendet wird, um das Formular abzusenden und die
             eingegebenen Daten an den Server zu senden.</desc>
-        <code>&lt;input type="submit"&gt;</code>
+        <code>
+        &lt;input type="submit"&gt;
+        </code>
         <thumbnail>
             <![CDATA[ 
         <input type="submit" value="Absenden">
@@ -1154,7 +1177,9 @@ Auch mit Zeilenumbrüchen.
         <desc>Das input-Element mit dem Typ Number wird verwendet, um ein Eingabefeld für numerische
             Werte in Webformularen darzustellen. Benutzer können hier numerische Werte wie Zahlen
             eingeben.</desc>
-        <code>&lt;input type="number"&gt;</code>
+        <code>
+        &lt;input type="number"&gt;
+        </code>
         <thumbnail>
             <![CDATA[ 
         <input type="number" id="quantity" placeholder="1234567" name="quantity" min="1" max="100" step="1">
@@ -1167,7 +1192,9 @@ Auch mit Zeilenumbrüchen.
         <desc>Das input-Element mit dem Typ Datum wird verwendet, um ein Eingabefeld für
             Datumsangaben in Webformularen zu erstellen. Benutzer können hier ein Datum auswählen,
             beispielsweise für Geburtsdaten oder Terminvereinbarungen.</desc>
-        <code>&lt;input type="date"&gt;</code>
+        <code>
+        &lt;input type="date"&gt;
+        </code>
         <thumbnail>
             <![CDATA[ 
         <input type="date" id="date-input" min="2000-01-01" max="2024-12-31">
@@ -1180,7 +1207,9 @@ Auch mit Zeilenumbrüchen.
         <desc>Das input-Element mit dem Typ email wird verwendet, um ein Eingabefeld für
             E-Mail-Adressen in Webformularen zu erstellen. Es validiert automatisch die Eingabe, um
             sicherzustellen, dass der Benutzer eine gültige E-Mail-Adresse eingibt.</desc>
-        <code>&lt;input type="email"&gt;</code>
+        <code>
+        &lt;input type="email"&gt;
+        </code>
         <thumbnail>
             <![CDATA[ 
         <input required type="email" placeholder="abc@googlemail.de" id="email-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
@@ -1193,7 +1222,9 @@ Auch mit Zeilenumbrüchen.
         <desc>Das input-Element mit dem Typ Datei wird verwendet, um Benutzern das Hochladen von
             Dateien in Webformularen zu ermöglichen. Benutzer können hier eine Datei von ihrem
             lokalen Gerät auswählen, um sie hochzuladen.</desc>
-        <code>&lt;input type="file"&gt;</code>
+        <code>
+        &lt;input type="file"&gt;
+        </code>
         <thumbnail>
             <![CDATA[ 
         <input type="file" id="file-input">
@@ -1209,7 +1240,7 @@ Auch mit Zeilenumbrüchen.
 
 
         <code>
-            &lt;button&gt;Hier benennen Sie Ihren Button&lt;\/button&gt;
+        &lt;button&gt;Hier benennen Sie Ihren Button&lt;\/button&gt;
         </code>
         <thumbnail>
             <![CDATA[ 

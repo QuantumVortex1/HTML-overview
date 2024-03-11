@@ -5,7 +5,7 @@ function create_code_part(index, text) {
     code_div.className = 'code-box';
     code_p = document.createElement('code');
     code_pre = document.createElement('pre')
-    code_pre.appendChild(document.createTextNode(text));
+    code_pre.appendChild(document.createTextNode(text.trim().replaceAll("\n        ", "\n")));
     code_p.appendChild(code_pre)
     code_div.appendChild(code_p);
     parent.appendChild(code_div);
