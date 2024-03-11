@@ -245,51 +245,54 @@ und derselbe     Text   .
     </thumbnail>
 </element>
 <element>
-    <title>Div Container</title>
-    <desc>Das div-Element wird als Container verwendet, um andere HTML-Elemente zu gruppieren oder zu strukturieren.</desc>
+    <title>Div</title>
+    <desc>Das div-Element steht für "division" und wird verwendet, um Abschnitte oder Gruppen von Inhalten auf einer Webseite zu erstellen. Es ist ein generisches Container-Element, das dazu dient, Bereiche auf der Seite zu definieren, die unabhängig voneinander gestaltet oder manipuliert werden können.</desc>
     <code>
         &lt;div&gt;
             &lt;p&gt;Inhalt im Div-Container.&lt;/p&gt;
-            &lt;ul&gt;
-                &lt;li&gt;Listenelement 1&lt;/li&gt;
-                &lt;li&gt;Listenelement 2&lt;/li&gt;
-            &lt;/ul&gt;
         &lt;/div&gt;
     </code>
     <thumbnail>
         <![CDATA[ 
-        <div>
-            <p>Inhalt im div-Container.</p>
-            <ul>
-                <li>Listenelement 1</li>
-                <li>Listenelement 2</li>
-            </ul>
+        <p>Dieser Text ist über dem Div</p>
+        <div class="thumb-small-box thumb-t-b-r">
+            <h3>Dieser text steht im Div.</h3>
+            <p>Hier könnte auch alles mögliche andere drin sein...</p>
         </div>
+        <p>Dieser Text ist unter dem Div</p>
         ]]>
     </thumbnail>
 </element>
 <element>
-    <title>Ordered List, Unordered List, and List Items</title>
-    <desc>Das ol-Element wird für geordnete Listen (nummerierte Listen) verwendet, ul für ungeordnete Listen (Aufzählungslisten) und li für die Listenelemente.</desc>
+    <title>Listen - ol, ul und li</title>
+    <desc>Das ol-Element steht für eine "geordnete Liste" und wird verwendet, um eine Liste von Elementen in einer bestimmten Reihenfolge darzustellen. Jeder Eintrag in der Liste wird automatisch nummeriert.&lt;br&gt;
+        Das ul-Element steht für eine "ungeordnete Liste" und wird verwendet, um eine Liste von Elementen ohne spezifische Reihenfolge darzustellen. Jeder Eintrag wird normalerweise mit einem Punkt, einem Kreis oder einem Quadrat als Marker dargestellt.&lt;br&gt;
+        Das li-Element steht für "Listenelement" und wird verwendet, um jedes Element in einer Liste zu definieren, sei es in einer geordneten oder ungeordneten Liste.</desc>
     <code>
         &lt;ol&gt;
             &lt;li&gt;Nummeriertes Listenelement 1&lt;/li&gt;
             &lt;li&gt;Nummeriertes Listenelement 2&lt;/li&gt;
+            &lt;li&gt;Nummeriertes Listenelement 3&lt;/li&gt;
         &lt;/ol&gt;
 
         &lt;ul&gt;
             &lt;li&gt;Aufzählungselement 1&lt;/li&gt;
             &lt;li&gt;Aufzählungselement 2&lt;/li&gt;
+            &lt;li&gt;Aufzählungselement 3&lt;/li&gt;
         &lt;/ul&gt;
     </code>
     <thumbnail>
         <![CDATA[ 
-        <ol>
+        <ol class="thumb-small-box thumb-t-b-r">
+        <br>
+        <h3>ol: Mit Nummerierung</h3>
             <li>Nummeriertes Listenelement Apfel</li>
             <li>Nummeriertes Listenelement Banane</li>
         </ol>
 
-        <ul>
+        <ul class="thumb-small-box thumb-t-b-r">
+        <br>
+        <h3>ul: Ohne Nummerierung</h3>
             <li>Aufzählungselement Apfel</li>
             <li>Aufzählungselement Banane</li>
         </ul>
@@ -297,8 +300,8 @@ und derselbe     Text   .
     </thumbnail>
 </element>
 <element>
-    <title>Definition List</title>
-    <desc>Das dl-Element wird verwendet, um eine Definitionenliste zu erstellen. dt steht für Definitionsterm und dd steht für Definition.</desc>
+    <title>Description List - dl, dt und dd</title>
+    <desc>Das dl-Element steht für "description list" und wird verwendet, um eine Liste von Begriffen und ihren zugehörigen Definitionen auf einer Webseite zu erstellen. Jeder Eintrag in der Liste besteht aus einem dt-Element für den Begriff und einem dd-Element für die Definition.</desc>
     <code>
         &lt;dl&gt;
             &lt;dt&gt;Begriff 1&lt;/dt&gt;
@@ -310,7 +313,7 @@ und derselbe     Text   .
     </code>
     <thumbnail>
         <![CDATA[ 
-        <dl>
+        <dl class="thumb-box thumb-t-b-r">
             <dt>Definition HTML:</dt>
             <dd>HTML strukturiert Webseiteninhalte mithilfe von Tags wie Überschriften und Absätzen.</dd>
 
@@ -321,28 +324,31 @@ und derselbe     Text   .
     </thumbnail>
 </element>
 <element>
-    <title>Anchor (Link)</title>
-    <desc>Das a-Element wird verwendet, um Hyperlinks zu erstellen und auf andere Webseiten oder Ressourcen zu verweisen.</desc>
+    <title>a - Links</title>
+    <desc>Das a-Element steht für "anchor" und wird verwendet, um Hyperlinks auf einer Webseite zu erstellen. Es ermöglicht es Benutzern, von einer Seite zur anderen zu navigieren oder zu anderen Ressourcen zu gelangen, indem sie auf den Link klicken.</desc>
     <code>
-        &lt;a href="https://www.example.com" target="_blank"&gt;Besuch Beispielseite&lt;/a&gt;
+        &lt;a href="https://www.example.com" target="_blank"&gt;
+        Besuch Beispielseite
+        &lt;/a&gt;
     </code>
     <thumbnail>
         <![CDATA[ 
-       
-        Damit kann man Sachen verlinken wie z.B.
-        <a href="https://wierbicki.org/" target="_blank">Besuche dem Meister seine Webseite</a>
+        <a href="https://wierbicki.org/" target="_blank">Hier klicken, um dem Meister seine Seite zu besuchen</a>
         ]]>
     </thumbnail>
 </element>
 <element>
-    <title>Emphasized Text and Strong Text</title>
-    <desc>Das em-Element wird verwendet, um Text zu betonen (kursiv), während das strong-Element für stark betonten Text (fett) verwendet wird.</desc>
+    <title>em und strong</title>
+    <desc>
+        Das em-Element steht für "emphasis" und wird verwendet, um Text auf einer Webseite zu betonen. Der Text, der von em umgeben ist, wird standardmäßig kursiv dargestellt. Es wird häufig für Namen, betonte Wörter oder Phrasen verwendet, um sie visuell hervorzuheben.&lt;br&gt;
+        Das strong-Element wird verwendet, um Text auf einer Webseite stark zu betonen. Der Text, der von strong umgeben ist, wird standardmäßig fett dargestellt. Es wird oft für Schlüsselwörter, wichtige Informationen oder Abschnitte verwendet, um sie visuell hervorzuheben und ihre Bedeutung zu betonen.</desc>
     <code>
-        &lt;p&gt;Dieser Text ist &lt;em&gt;betont&lt;/em&gt; und dieser Text ist &lt;strong&gt;stark betont&lt;/strong&gt;.&lt;/p&gt;
+        &lt;em&gt;Dieser Text ist durch em betont.&lt;/em&gt; 
+        &lt;strong&gt;Dieser Text ist durch strong stark betont.&lt;/strong&gt;
     </code>
     <thumbnail>
         <![CDATA[ 
-        <p>Dieser Text ist <em>betont</em> und dieser Text ist <strong>stark betont</strong>.</p>
+        <p>Dieser Text ist "normal".</em><br><em>Dieser Text ist durch em betont.</em><br><strong>Dieser Text ist durch strong stark betont.</strong></p>
         ]]>
     </thumbnail>
 </element>
@@ -354,7 +360,7 @@ und derselbe     Text   .
     </code>
     <thumbnail>
         <![CDATA[ 
-        <p>Dieser Text enthält einen <span style="color:purple">speziellen Abschnitt</span>.</p>
+        <p>Dieser Text enthält einen <span>speziellen Abschnitt</span>.</p>
         ]]>
     </thumbnail>
 </element>
@@ -369,22 +375,22 @@ und derselbe     Text   .
     </code>
     <thumbnail>
         <![CDATA[ 
-        <blockquote cite="https://wierbicki.org/kuenstliche-intelligenz-im-personalwesen-chatgpt">
+        <blockquote class="thumb-box thumb-t-b-r" cite="https://wierbicki.org/kuenstliche-intelligenz-im-personalwesen-chatgpt">
             <p>Der Einsatz von KI ermöglicht es Unternehmen, an der Spitze der technologischen Entwicklung zu stehen und durch effizientere Prozesse sowie eine stärkere Mitarbeiterbindung einen Wettbewerbsvorteil zu erlangen.</p>
-            <div>Quelle: https://wierbicki.org/kuenstliche-intelligenz-im-personalwesen-chatgpt </div>
+            <footer>Quelle: https://wierbicki.org/kuenstliche-intelligenz-im-personalwesen-chatgpt </footer>
         </blockquote>
         ]]>
     </thumbnail>
 </element>
 <element>
-    <title>Abbreviation</title>
+    <title>abbr</title>
     <desc>Das abbr-Element wird verwendet, um Abkürzungen oder Akronyme zu kennzeichnen und optional eine Erklärung bereitzustellen.</desc>
     <code>
-        &lt;p&gt;HTML steht für &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+        &lt;p&gt;Im Web arbeitet man viel mit &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
     </code>
     <thumbnail>
         <![CDATA[ 
-        <p>HTML steht für <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
+        <p>Im web arbeitet man oft mit <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
         ]]>
     </thumbnail>
 </element>
@@ -393,7 +399,7 @@ und derselbe     Text   .
     <desc> Das table-Element wird verwendet, um eine Tabelle in HTML zu erstellen, die Daten in Zeilen und Spalten organisiert.
         Eine Tabelle besteht aus drei Hauptteilen: dem Kopf (thead), dem Hauptteil (tbody) und dem Fuß (tfoot).</desc>
     <code>
-        &lt;table class="html-css-table"&gt;
+        &lt;table&gt;
             &lt;thead&gt;
                 &lt;tr&gt;
                     &lt;th&gt;Abkürzungen&lt;/th&gt;
@@ -412,98 +418,322 @@ und derselbe     Text   .
             &lt;/tbody&gt;
             &lt;tfoot&gt;
                 &lt;tr&gt;
-                    &lt;td colspan="2" class="footer-cell"&gt;Footer für Tabelle&lt;/td&gt;
+                    &lt;td colspan="2"&gt;Footer für Tabelle&lt;/td&gt;
                 &lt;/tr&gt;
             &lt;/tfoot&gt;
         &lt;/table&gt;
     </code>
     <thumbnail>
         <![CDATA[ 
-        <table class="html-css-table">
+        <table class="thumb-screen-table thumb-highlight" border="1">
             <thead>
                 <tr>
-                    <th>Tag</th>
-                    <th>Bedeutung</th>
+                    <th>Name</th>
+                    <th>Alter</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>HTML</td>
-                    <td>Hypertext Markup Language</td>
+                    <td>Max</td>
+                    <td>30</td>
                 </tr>
                 <tr>
-                    <td>CSS</td>
-                    <td>Cascading Style Sheets</td>
+                    <td>Anna</td>
+                    <td>25</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="2" class="footer-cell">Insgesamt 2 Abkürzungen in der Tabelle</td>
+                    <td colspan="2">Gesamt: 2 Personen</td>
                 </tr>
             </tfoot>
         </table>
         ]]>
     </thumbnail>
 </element>
+
 <element>
-    <title>Table (th-tr-td)</title>
-    <desc>Das table-Element wird verwendet, um eine Tabelle zu erstellen. tr steht für Tabellenzeile, th steht für Tabellenkopf und td steht für Tabellenzelle.</desc>
+    <title>Thead</title>
+    <desc> Das thead-Element wird in einer HTML-Tabelle verwendet, um den Kopfbereich (header) der Tabelle zu definieren. Normalerweise enthält der Kopfbereich die Spaltenüberschriften der Tabelle.</desc>
     <code>
         &lt;table&gt;
             &lt;thead&gt;
                 &lt;tr&gt;
-                    &lt;th&gt;Header 1&lt;/th&gt;
-                    &lt;th&gt;Header 2&lt;/th&gt;
+                    &lt;th&gt;Überschrift 1&lt;/th&gt;
+                    &lt;th&gt;Überschrift2&lt;/th&gt;
                 &lt;/tr&gt;
             &lt;/thead&gt;
             &lt;tbody&gt;
                 &lt;tr&gt;
-                    &lt;td&gt;Daten 1&lt;/td&gt;
-                    &lt;td&gt;Daten 2&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;Daten 3&lt;/td&gt;
-                    &lt;td&gt;Daten 4&lt;/td&gt;
+                    &lt;td&gt;Hier steht&lt;/td&gt;
+                    &lt;td&gt;der Inhalt&lt;/td&gt;
                 &lt;/tr&gt;
             &lt;/tbody&gt;
         &lt;/table&gt;
     </code>
     <thumbnail>
         <![CDATA[ 
-        <style>
-            table {
-                border-collapse: collapse;
-                width: 100%;
-                border: 1px solid white; /* Hier wird die Umrandung festgelegt */
-            }
-
-            th, td {
-                border: 1px solid white; /* Hier wird die Umrandung für Zellen festgelegt */
-                padding: 8px;
-                text-align: left;
-            }
-        </style>
-        <table>
-            <thead>
+        <table class="thumb-screen-table" border="1">
+            <thead class="thumb-highlight">
                 <tr>
-                    <th>HTML</th>
-                    <th>CSS</th>
+                    <th>Name</th>
+                    <th>Alter</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Hypertext Markup Language</td>
-                    <td>Cascading Style Sheets</td>
+                    <td>Max</td>
+                    <td>30</td>
                 </tr>
                 <tr>
-                    <td>Tim Berners-Lee im Jahr 1991</td>
-                    <td>Håkon Wium Lie und Bert Bos 1996</td>
+                    <td>Anna</td>
+                    <td>25</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Gesamt: 2 Personen</td>
+                </tr>
+            </tfoot>
         </table>
         ]]>
     </thumbnail>
 </element>
+
+<element>
+    <title>Tbody</title>
+    <desc> Das tbody-Element wird in einer HTML-Tabelle verwendet, um den Hauptbereich (body) der Tabelle zu definieren. Es enthält die eigentlichen Dateneinträge der Tabelle.</desc>
+    <code>
+        &lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Überschrift 1&lt;/th&gt;
+                    &lt;th&gt;Überschrift2&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Hier steht&lt;/td&gt;
+                    &lt;td&gt;der Inhalt&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Hier steht&lt;/td&gt;
+                    &lt;td&gt;noch mehr Inhalt&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <table class="thumb-screen-table" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Alter</th>
+                </tr>
+            </thead>
+            <tbody class="thumb-highlight">
+                <tr>
+                    <td>Max</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Gesamt: 2 Personen</td>
+                </tr>
+            </tfoot>
+        </table>
+        ]]>
+    </thumbnail>
+</element>
+
+<element>
+    <title>Tfoot</title>
+    <desc> Das tfoot-Element wird in einer HTML-Tabelle verwendet, um den Fußbereich (footer) der Tabelle zu definieren. Es enthält typischerweise Zusammenfassungen, Gesamtsummen oder andere Informationen, die am Ende der Tabelle angezeigt werden sollen.</desc>
+    <code>
+        &lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Überschrift 1&lt;/th&gt;
+                    &lt;th&gt;Überschrift2&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Hier steht&lt;/td&gt;
+                    &lt;td&gt;der Inhalt&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="2"&gt;Footer der Tabelle&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <table class="thumb-screen-table" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Alter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Max</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+            <tfoot class="thumb-highlight">
+                <tr>
+                    <td colspan="2">Gesamt: 2 Personen</td>
+                </tr>
+            </tfoot>
+        </table>
+        ]]>
+    </thumbnail>
+</element>
+
+<element>
+    <title>tr</title>
+    <desc> Das tr-Element wird in einer HTML-Tabelle verwendet, um eine Zeile (row) innerhalb der Tabelle zu definieren. Es enthält normalerweise eine oder mehrere Zellen (td oder th), die die Daten oder die Kopfzeile der Tabelle darstellen.</desc>
+    <code>
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Hier steht&lt;/td&gt;
+                &lt;td&gt;der Inhalt&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <table class="thumb-screen-table" border="1">
+            <thead>
+                <tr class="thumb-highlight">
+                    <th>Name</th>
+                    <th>Alter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Max</td>
+                    <td>30</td>
+                </tr>
+                <tr class="thumb-highlight">
+                    <td>Anna</td>
+                    <td>25</td>
+                </tr class="thumb-highlight">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Gesamt: 2 Personen</td>
+                </tr>
+            </tfoot>
+        </table>
+        ]]>
+    </thumbnail>
+</element>
+
+<element>
+    <title>th</title>
+    <desc> Das th-Element wird in einer HTML-Tabelle verwendet, um die Kopfzeilen (header cells) oder die Datenzeilen (data cells) der Tabelle zu definieren. Innerhalb des Kopfbereichs (thead) wird th für Spaltenüberschriften verwendet, während es im Hauptbereich (tbody) oder im Fußbereich (tfoot) verwendet wird, um Datenzellen zu definieren. Browser rendern den Text in th standardmäßig fett und zentriert.</desc>
+    <code>
+        &lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Überschrift 1&lt;/th&gt;
+                    &lt;th&gt;Überschrift2&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Hier steht&lt;/td&gt;
+                    &lt;td&gt;der Inhalt&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <table class="thumb-screen-table" border="1">
+            <thead>
+                <tr>
+                    <th class="thumb-highlight">Name</th>
+                    <th>Alter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Max</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Gesamt: 2 Personen</td>
+                </tr>
+            </tfoot>
+        </table>
+        ]]>
+    </thumbnail>
+</element>
+
+<element>
+    <title>td</title>
+    <desc> Das th-Element wird in einer HTML-Tabelle verwendet, um die Kopfzeilen (header cells) oder die Datenzeilen (data cells) der Tabelle zu definieren. Innerhalb des Kopfbereichs (thead) wird th für Spaltenüberschriften verwendet, während es im Hauptbereich (tbody) oder im Fußbereich (tfoot) verwendet wird, um Datenzellen zu definieren. Browser rendern den Text in th standardmäßig fett und zentriert.</desc>
+    <code>
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Zelle 1&lt;/td&gt;
+                &lt;td&gt;Zelle 2&lt;/td&gt;
+                &lt;td&gt;Zelle 3&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    </code>
+    <thumbnail>
+        <![CDATA[ 
+        <table class="thumb-screen-table" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Alter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="thumb-highlight">Max</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td class="thumb-highlight">25</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="thumb-highlight" colspan="2">Gesamt: 2 Personen</td>
+                </tr>
+            </tfoot>
+        </table>
+        ]]>
+    </thumbnail>
+</element>
+
 <element>
     <title>Caption</title>
     <desc>

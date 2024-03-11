@@ -69,6 +69,10 @@
     margin: .5em;
     padding: 1rem;
 }
+.thumb-small-box h2,
+.thumb-small-box h3{
+    margin: 0;
+}
 
 .thumb-article{
     width: 80%;
@@ -93,4 +97,21 @@
 .thumb-p-pre pre,
 .thumb-p-pre h3{
     margin: 0;
+}
+
+.thumbnail span{
+    color: blueviolet;
+}
+
+.thumb-screen-table{
+    border-collapse: collapse;
+    width: 80%;
+}
+.thumb-screen-t-el{
+    margin: 1rem;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
 }
