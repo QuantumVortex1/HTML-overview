@@ -106,6 +106,7 @@
 .thumb-screen-table{
     border-collapse: collapse;
     width: 80%;
+    border: 1px solid white;
 }
 .thumb-screen-t-el{
     margin: 1rem;
@@ -114,4 +115,13 @@
 th, td {
     padding: 8px;
     text-align: left;
+    border: 1px solid white;
+}
+
+.thumb-caption{
+    margin: .5rem;
+}
+
+.thumb-textarea{
+    color: white;
 }
