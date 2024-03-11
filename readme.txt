@@ -28,3 +28,8 @@ Hinweise:
 * Nachdem wir eine Auswahl den Input-elemente bereits hatten, haben wir entschieden,
   dass die anderen, die wir nicht haben, auch nicht von Relevanz sind.
 * Wir bitten darum, "der_wahre_sound.mp3" mit Humor zu nehmen.
+* PHPMailer hat keinen Zusammenhang zu einem der Plichtelemente. 
+  In der Hinsicht haben wir also keine PHP-libraries benutzt. 
+  PHPMailer wird nur benutzt, um uns die emails tatsächlich zusenden zu lassen,
+  der rest passiert volkommen unabhängig davon. Da dieses Element aber ein reiner Zusatz ist,
+  Sollte PHPMailer nicht als PHP-library 
