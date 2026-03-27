@@ -3,7 +3,7 @@
        <br>
        Anschrift: Jonas Dieroff, Elyesa Duru, Chiara Kisro
        <br>
-       Telefon: +49 1515 5218860
+       Telefon: XXXXXXXXX
        <br>
        <a class="link-imp" href="#" onclick="openContactOverlay()">
            E-Mail: htmlgruppe@gmail.com
